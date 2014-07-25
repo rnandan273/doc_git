@@ -1,0 +1,100 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww18180\viewh12140\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs22 \cf0 \CocoaLigature0 Raghunandans-MacBook-Pro:soothsayer-cluster raghu$ /usr/local/lein pallet add-vmfest-image ./ubuntu-12.04.vdi.gz\
+Jun 29, 2014 2:46:51 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: Connecting to VirtualBox via XPCom\
+Jun 29, 2014 2:46:53 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: No :default-bridged-interface defined. Will chose from these options: en0: Wi-Fi (AirPort)\
+Downloading ./ubuntu-12.04.vdi.gz ...\
+Jun 29, 2014 2:46:53 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: About to execute job \
+\{:key-file "/Users/raghu/.vmfest/models/vagrant-key",\
+ :image-file\
+ "/var/folders/sr/xbp284ss68lf2x_zvptkr84w0000gp/T/vmfest-vmfest-ubuntu-12.04-1/ubuntu-12.04.vdi",\
+ :temp-dir\
+ #<File /var/folders/sr/xbp284ss68lf2x_zvptkr84w0000gp/T/vmfest-vmfest-ubuntu-12.04-1>,\
+ :model-meta "/Users/raghu/.vmfest/models/vmfest-ubuntu-12.04.meta",\
+ :vbox\
+ \{:url "http://localhost:18083/", :username "test", :password "test"\},\
+ :model-name "ubuntu-12.04",\
+ :image-name "ubuntu-12.04",\
+ :key-url\
+ "https://raw.github.com/mitchellh/vagrant/master/keys/vagrant",\
+ :gzipped? true,\
+ :gzipped-image-file\
+ "/var/folders/sr/xbp284ss68lf2x_zvptkr84w0000gp/T/vmfest-vmfest-ubuntu-12.04-1/ubuntu-12.04.vdi.gz",\
+ :vagrant-box? false,\
+ :meta nil,\
+ :model-file "/Users/raghu/.vmfest/models/vmfest-ubuntu-12.04.vdi",\
+ :image-file-name "ubuntu-12.04.vdi.gz",\
+ :model-path "/Users/raghu/.vmfest/models",\
+ :meta-url "./ubuntu-12.04.meta",\
+ :image-url "./ubuntu-12.04.vdi.gz"\}\
+\
+Jun 29, 2014 2:46:53 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: ubuntu-12.04: Downloading ./ubuntu-12.04.vdi.gz into /var/folders/sr/xbp284ss68lf2x_zvptkr84w0000gp/T/vmfest-vmfest-ubuntu-12.04-1/ubuntu-12.04.vdi.gz\
+Jun 29, 2014 2:46:54 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: ubuntu-12.04: Gunzipping /var/folders/sr/xbp284ss68lf2x_zvptkr84w0000gp/T/vmfest-vmfest-ubuntu-12.04-1/ubuntu-12.04.vdi.gz into /var/folders/sr/xbp284ss68lf2x_zvptkr84w0000gp/T/vmfest-vmfest-ubuntu-12.04-1/ubuntu-12.04.vdi\
+Jun 29, 2014 2:47:03 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: ubuntu-12.04: File is not a vagrant box\
+Jun 29, 2014 2:47:03 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: ubuntu-12.04: Loading metadata from ./ubuntu-12.04.meta\
+Exception in thread "main" java.io.FileNotFoundException: ./ubuntu-12.04.meta (No such file or directory)\
+	at java.io.FileInputStream.open(Native Method)\
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)\
+	at clojure.java.io$fn__8326.invoke(io.clj:233)\
+	at clojure.java.io$fn__8265$G__8230__8272.invoke(io.clj:73)\
+	at clojure.java.io$fn__8338.invoke(io.clj:262)\
+	at clojure.java.io$fn__8265$G__8230__8272.invoke(io.clj:73)\
+	at clojure.java.io$fn__8300.invoke(io.clj:169)\
+	at clojure.java.io$fn__8239$G__8234__8246.invoke(io.clj:73)\
+	at clojure.java.io$reader.doInvoke(io.clj:106)\
+	at clojure.lang.RestFn.invoke(RestFn.java:410)\
+	at clojure.lang.AFn.applyToHelper(AFn.java:161)\
+	at clojure.lang.RestFn.applyTo(RestFn.java:132)\
+	at clojure.core$apply.invoke(core.clj:603)\
+	at clojure.core$slurp.doInvoke(core.clj:6126)\
+	at clojure.lang.RestFn.invoke(RestFn.java:410)\
+	at vmfest.virtualbox.image$threaded_get_metadata.invoke(image.clj:202)\
+	at vmfest.virtualbox.image$setup_model.doInvoke(image.clj:261)\
+	at clojure.lang.RestFn.applyTo(RestFn.java:142)\
+	at clojure.core$apply.doInvoke(core.clj:609)\
+	at clojure.lang.RestFn.invoke(RestFn.java:533)\
+	at pallet.compute.vmfest.service.VmfestService.install_image(service.clj:885)\
+	at pallet.compute.vmfest$add_image.doInvoke(vmfest.clj:161)\
+	at clojure.lang.RestFn.invoke(RestFn.java:425)\
+	at clojure.lang.AFn.applyToHelper(AFn.java:163)\
+	at clojure.lang.RestFn.applyTo(RestFn.java:132)\
+	at clojure.core$apply.invoke(core.clj:605)\
+	at pallet.task.add_vmfest_image$add_vmfest_image.doInvoke(add_vmfest_image.clj:51)\
+	at clojure.lang.RestFn.invoke(RestFn.java:423)\
+	at clojure.lang.Var.invoke(Var.java:419)\
+	at clojure.lang.AFn.applyToHelper(AFn.java:163)\
+	at clojure.lang.Var.applyTo(Var.java:532)\
+	at clojure.core$apply.invoke(core.clj:603)\
+	at pallet.main_invoker$invoke.invoke(main_invoker.clj:131)\
+	at clojure.lang.Var.invoke(Var.java:423)\
+	at pallet.main$pallet_task.doInvoke(main.clj:169)\
+	at clojure.lang.RestFn.invoke(RestFn.java:439)\
+	at clojure.lang.Var.invoke(Var.java:423)\
+	at user$eval5.invoke(form-init214262645678501384.clj:1)\
+	at clojure.lang.Compiler.eval(Compiler.java:6511)\
+	at clojure.lang.Compiler.eval(Compiler.java:6501)\
+	at clojure.lang.Compiler.eval(Compiler.java:6501)\
+	at clojure.lang.Compiler.load(Compiler.java:6952)\
+	at clojure.lang.Compiler.loadFile(Compiler.java:6912)\
+	at clojure.main$load_script.invoke(main.clj:283)\
+	at clojure.main$init_opt.invoke(main.clj:288)\
+	at clojure.main$initialize.invoke(main.clj:316)\
+	at clojure.main$null_opt.invoke(main.clj:349)\
+	at clojure.main$main.doInvoke(main.clj:427)\
+	at clojure.lang.RestFn.invoke(RestFn.java:421)\
+	at clojure.lang.Var.invoke(Var.java:419)\
+	at clojure.lang.AFn.applyToHelper(AFn.java:163)\
+	at clojure.lang.Var.applyTo(Var.java:532)\
+	at clojure.main.main(main.java:37)\
+Subprocess failed}

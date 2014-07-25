@@ -1,0 +1,1482 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fnil\fcharset0 Monaco;\f4\fmodern\fcharset0 CourierNewPSMT;\f5\froman\fcharset0 Times-Roman;
+\f6\fmodern\fcharset0 Courier-Bold;\f7\fnil\fcharset0 AndaleMono;\f8\fswiss\fcharset0 ArialMT;
+\f9\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red255\green238\blue149;\red21\green102\blue47;\red26\green26\blue26;
+\red127\green0\blue85;\red42\green0\blue255;\red180\green40\blue160;\red128\green128\blue128;\red180\green100\blue160;
+\red0\green128\blue128;\red63\green127\blue127;\red127\green0\blue127;\red16\green121\blue2;\red236\green236\blue236;
+\red83\green85\blue2;\red242\green242\blue242;\red13\green95\blue24;\red242\green244\blue245;\red83\green83\blue83;
+\red29\green111\blue63;\red38\green38\blue38;\red246\green246\blue246;\red0\green0\blue233;\red34\green79\blue188;
+\red52\green61\blue68;\red82\green0\blue83;\red245\green245\blue245;\red11\green84\blue83;\red0\green0\blue117;
+\red67\green67\blue67;\red139\green10\blue80;\red0\green0\blue128;\red128\green128\blue255;\red128\green0\blue0;
+\red196\green196\blue196;\red63\green46\blue255;\red116\green136\blue163;\red6\green6\blue6;\red155\green134\blue155;
+\red250\green237\blue162;\red137\green197\blue20;\red252\green244\blue220;\red0\green0\blue173;\red56\green56\blue56;
+\red0\green0\blue120;\red234\green234\blue234;\red107\green0\blue1;\red37\green127\blue159;\red16\green60\blue192;
+\red47\green255\blue18;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid1\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid101\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww23880\viewh12440\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 Cordova , yeoman, UAB integration:\
+\
+yeoman tutorial to scaffold a web app \
+MongoDB design\
+Linkedin contacts\
+Gmail contacts\
+Facebook contacts\
+Phone contacts\
+\
+UAB contact\
+\
+Installed brew \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f1 \cf2 \cb3 \CocoaLigature0 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"\
+\cf4 \cb1 brew install ant\
+\cf2                                                                           \cb3 \
+
+\f0 \cf0 \cb1 \CocoaLigature1 Yeoman:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 Install Nodejs\
+nom : node package manager\
+sudo npm install -g yo\
+sudo npm install -g generator-webapp\
+grunt server - runs the app\
+\
+sudo npm install -g generator-angular\
+\
+Using OAUth2 in java script\
+bower install hello\
+\
+Follow tutorial here:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+{\field{\*\fldinst{HYPERLINK "http://coenraets.org/blog/cordova-phonegap-3-tutorial/"}}{\fldrslt \cf0 http://coenraets.org/blog/cordova-phonegap-3-tutorial/}}\
+\
+Using cordova\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f2\fs22 \cf0 \CocoaLigature0 	mkdir Projects\
+   111	10:39	ls\
+   112	10:39	cd cordovatest/\
+   113	10:39	ls\
+   114	10:39	cordova create ksink co.in.ksink Ksimk\
+   115	10:39	cd ksink/\
+   116	10:39	ls\
+   117	10:39	cordova platforms add ios\
+   118	10:40	cordova plugin add org.apache.cordova.device\
+   119	10:40	cordova plugin add org.apache.cordova.console\
+   120	10:40	cordova build ios\
+   121	10:40	cordova emulate ios\
+   122	10:41	ls\
+   123	10:41	cd ..\
+   124	10:42	ls\
+   125	10:42	cd ..\
+   126	10:42	ls\
+   127	10:42	cd cordovatest/\
+   128	10:42	ls\
+   129	10:42	cd ksink\
+   130	10:42	ls\
+   131	10:43	cd webapp/\
+   132	10:44	ls\
+   133	10:44	grunt\
+   134	10:44	grunt --force\
+   135	10:44	ls\
+   136	10:45	cd ..\
+   137	10:45	ls\
+   138	10:45	\\rm -rf www/*\
+   139	10:45	ls\
+   140	10:45	cp -R webapp/dist/* www/\
+   141	10:45	ls www\
+   142	10:45	cordova build\
+   143	10:46	cordova emulate ios\
+\
+This runs the sample app in the emulator
+\f0\fs24 \CocoaLigature1 \
+\
+\pard\pardeftab720
+
+\f3\fs22 \cf5 UAB account\
+friendlist:\
+\
+\pard\pardeftab720
+\cf6 "HardwareVendor"\cf0 \
+\cf6 "HardwareModel"\cf0 \
+\cf6 "BrowserName"\cf0 \
+\cf6 "PlatformName"\cf0 \
+\cf6 "ScreenPixelsWidth"\cf0 \
+\cf6 "ScreenPixelsHeight"\
+\
+Heroku mongoHQ\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f1\fs24 \cf2 \cb3 \CocoaLigature0 git init\
+   449	0:19	git add\
+   450	0:19	git add .\
+   451	0:20	git push heroku todolist:master\
+   452	0:21	git push heroku master\
+   453	0:21	git status\
+   454	0:22	heroku create --stack cedar\
+   455	0:23	heroku addons:add mongohq:free\
+   456	0:23	heroku addons:add mongohq\
+   457	0:24	git push heroku master\
+   458	0:24	git push heroku todolist:master\
+   459	0:25	cd todolist/\
+   460	0:25	git push heroku master\
+   461	0:25	heroku create --stack cedar\
+   462	0:25	heroku addons:add mongohq\
+   463	0:26	heroku addons:add mongohq:free\
+   464	0:26	heroku addons:add mongohq\
+   465	0:27	heroku addons:add mongohq --app cryptic-temple-1595\
+   466	0:28	git push heroku master\
+   467	0:28	git status\
+   468	0:28	git commit -a "Init"\
+   469	0:28	git commit -m "Init"\
+   470	0:29	git push heroku master\
+   471	0:31	history\
+:w\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f3\fs22 \cf5 \cb1 \CocoaLigature1 \
+\
+{\field{\*\fldinst{HYPERLINK "https://console.developers.google.com/project/494829573812/apiui/credential"}}{\fldrslt https://console.developers.google.com/project/494829573812/apiui/credential}}\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl600
+\ls1\ilvl0
+\f1\fs26 \cf4 http://cryptic-temple-1595.herokuapp.com/gmailConnections\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl600
+\ls2\ilvl0\cf4 		http://cryptic-temple-1595.herokuapp.com\
+		\
+		\
+\pard\pardeftab720
+\ls2\ilvl0
+\f4\fs28 \cf0 		<table style="width:100px">\
+		
+\f3\fs22 \cf7 @\cf8 form(routes.Application.deleteUABContact(contact.id))\cf9 \{
+\f4\fs28 \cf0 \
+		<tr>\
+		\'a0 <td>
+\f3\fs22 \cf10 <\cf11 img\cf0  \cf12 src\cf0 =\cf7 @\cf8 contact.pictureUrl\cf6  \cf12 height\cf0 =\cf6 "42"\cf0  \cf12 width\cf0 =\cf6 "42"\cf10 ></\cf11 img\cf10 >
+\f4\fs28 \cf0 </td>\
+		  <td>\
+		  	<tr>
+\f3\fs22 \cf7 @\cf8 contact.headline</tr>
+\f4\fs28 \cf0  \
+		\'a0 	<tr>
+\f3\fs22 \cf7 @\cf8 contact.firstName \cf7 @\cf8 contact.firstName
+\f4\fs28 \cf0 </tr>\
+		  </td>\
+		</tr>\
+		<tr>\
+		\'a0 <td>
+\f3\fs22 \cf7 @\cf8 contact.industry\cf7  @\cf8 contact.location
+\f4\fs28 \cf0 </td>\
+		\'a0 <td>
+\f3\fs22 \cf7 @\cf8 contact.title\cf7  @\cf8 contact.fullName
+\f4\fs28 \cf0 </td>\
+		</tr><tr> \
+		\'a0 <td>
+\f3\fs22 \cf7 @\cf8 contact.emailAddresses\cf0  \cf7 @\cf8 contact.phoneNumbers\cf0  
+\f4\fs28 </td>\
+		</tr>\
+		
+\f3\fs22 \cf10 <\cf11 input\cf0  \cf12 type\cf0 =\cf6 "submit"\cf0  \cf12 value\cf0 =\cf6 "Delete"\cf10 >\cf0 \
+		\cf9 \}
+\f4\fs28 \cf0 \
+		</table>\
+\pard\tx566\pardeftab720
+
+\f1\fs26 \cf4 \
+     
+\f3\fs22 \cf10 <\cf11 p\cf10 >\cf0 \
+\pard\pardeftab720
+\cf0                \cf7 @\cf8 form(routes.Application.deleteUABContact(contact.id))\cf9 \{\cf0 \
+               \cf10 <\cf11 img\cf0  \cf12 src\cf0 =\cf7 @\cf8 contact.pictureUrl\cf6  \cf12 height\cf0 =\cf6 "42"\cf0  \cf12 width\cf0 =\cf6 "42"\cf10 ></\cf11 img\cf10 >\cf0                  \
+          \cf10 </\cf11 p\cf10 ><\cf11 p\cf10 >\cf0 \
+               \cf7 @\cf8 contact.headline\cf0  \
+               \cf7 @\cf8 contact.firstName\cf7  @\cf8 contact.lastName\cf0 \
+          \cf10 </\cf11 p\cf10 ><\cf11 p\cf10 >\cf0 \
+               \cf7 @\cf8 contact.industry\cf7  @\cf8 contact.location\cf0                  \
+               \cf7 @\cf8 contact.title\cf7  @\cf8 contact.fullName\cf0 \
+          \cf10 </\cf11 p\cf10 ><\cf11 p\cf10 >\cf0     \
+               \cf7 @\cf8 contact.emailAddresses\cf0  \
+               \cf7 @\cf8 contact.phoneNumbers\cf0  \
+               \cf10 <\cf11 input\cf0  \cf12 type\cf0 =\cf6 "submit"\cf0  \cf12 value\cf0 =\cf6 "Delete"\cf10 >\cf0 \
+               \cf9 \}\cf0 \
+               \cf10 </\cf11 p\cf10 >
+\f1\fs26 \cf4 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f3\fs22 \cf5 From Linkedin\
+   Name, Title, Industry, Location, Picture:\
+\
+From Gmail\
+   Email, Telephone\
+\
+\pard\pardeftab720\sa240
+
+\f5\fs24 \cf0 Email: ["srinivas.mulgund@hp.com"] \
+Telephone: []\
+\
+\pard\pardeftab720
+
+\f3\fs22 \cf6 https://graph.facebook.com/me?fields=id,name,friends&access_token=\'931430725377172514|ea733319c5341e14be3009237841271c\'94\
+\pard\pardeftab720
+
+\f2\fs54 \cf13 \cb14 https://graph.facebook.com/oauth/access_token?client_id="\cf0  \cf15 +\cf0  \
+            
+\f3\fs22 \cf6 \cb1 1430725377172514
+\f2\fs54 \cf15 \cb14 +\cf13 "&redirect_uri="\cf0  \cf15 +\cf0  \
+            
+\f3\fs22 \cf6 \cb1 http://localhost:9000/facebookConnections
+\f2\fs54 \cf15 \cb14 +\cf13 "&client_secret="\cf15 +
+\f3\fs22 \cf6 \cb1 ea733319c5341e14be3009237841271c
+\f2\fs54 \cf15 \cb14 +\cf13 "&code="\cf15 +
+\f3\fs20 \cf16 \cb0 \CocoaLigature0 AQDRi7joFSzOSQzPlJiJxkCNiQDtDdpw-OIADh5-iUR7SWjFpRZ0v_exfseUS9ycMBeYC7rnj5SrQ-UMDlnUEs3WJup_CntyJyVnbzGyH5EOIePJrev2sMja1ZacU2blOHBuxRDPoORmp5pcC4uroH4Z6YHgje-nWMa0L92owR6u0mrGWswDsMdN-nT0ph54-yokQFL3SdIGDIOq0HDUaq0a6EavTzDvhYFDaZf7myxYVoS7ssKbYM8trCwozP8fLWLhJ4NRT7RV63d_QM8XqrbNLDwyU_8M9j3Xo5wu3DsgR2VOV-MF70ARi0UiqrFeSM0
+\f2\fs54 \cf4 \cb14 \CocoaLigature1 \
+\pard\pardeftab720
+
+\f3\fs22 \cf6 \cb1 \
+\
+\
+\pard\pardeftab720
+
+\f2\fs54 \cf13 \cb14 https://graph.facebook.com/oauth/access_token?client_id="\cf0  \cf15 +
+\f3\fs22 \cf6 \cb1 1430725377172514
+\f2\fs54 \cf15 \cb14 +\'94&redirect_uri=\'94+
+\f3\fs22 \cf6 \cb1 http://localhost:9000/facebookConnections+
+\f2\fs54 \cf13 \cb14 \'94&client_secret="\cf15 +
+\f3\fs22 \cf6 \cb1 ea733319c5341e14be3009237841271c
+\f2\fs54 \cf15 \cb14 +\cf13 "&code="\cf15 +
+\f3\fs20 \cf16 \cb0 \CocoaLigature0 AQDRi7joFSzOSQzPlJiJxkCNiQDtDdpw-OIADh5-iUR7SWjFpRZ0v_exfseUS9ycMBeYC7rnj5SrQ-UMDlnUEs3WJup_CntyJyVnbzGyH5EOIePJrev2sMja1ZacU2blOHBuxRDPoORmp5pcC4uroH4Z6YHgje-nWMa0L92owR6u0mrGWswDsMdN-nT0ph54-yokQFL3SdIGDIOq0HDUaq0a6EavTzDvhYFDaZf7myxYVoS7ssKbYM8trCwozP8fLWLhJ4NRT7RV63d_QM8XqrbNLDwyU_8M9j3Xo5wu3DsgR2VOV-MF70ARi0UiqrFeSM0
+\f2\fs54 \cf4 \cb14 \CocoaLigature1 \
+\pard\pardeftab720
+
+\f5\fs24 \cf0 \cb1 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f3\fs20 \cf16 \cb0 \CocoaLigature0 \{"name":"Raghu Kundangar","work":[\{"employer":\{"id":"114381991912181","name":"Tumri, Inc."\}\}],"first_name":"Raghu","last_name":"Kundangar","hometown":\{"id":"105836606122544","name":"Hubli"\},"id":"667687312","friends":\{"data":[\{"first_name":"Mallikarjun","last_name":"Hiremani","link":"https:\\/\\/www.facebook.com\\/hiremani","id":"508462301"\},\{"first_name":"Praveen","last_name":"Mallya","link":"https:\\/\\/www.facebook.com\\/prmallya","id":"528265490"\},\{"first_name":"Dinesh","last_name":"Narayana","link":"https:\\/\\/www.facebook.com\\/dinesh.narayana","id":"530963850"\},\{"first_name":"Arun","last_name":"Sharma","link":"https:\\/\\/www.facebook.com\\/arun.sharma.986227","id":"548748521"\},\{"first_name":"Shivakumar","last_name":"Kalyanshettar","link":"https:\\/\\/www.facebook.com\\/shivakumar.kalyanshettar","id":"572288093"\},\{"first_name":"Pradeep","last_name":"Javangula","link":"https:\\/\\/www.facebook.com\\/pradeep.javangula","id":"578534072"\},\{"first_name":"Hemanand","last_name":"Masilamani","link":"https:\\/\\/www.facebook.com\\/anand0007","id":"590354535"\},\{"first_name":"Praveen","last_name":"Thampi","link":"https:\\/\\/www.facebook.com\\/thampi.praveen","id":"592493711"\},\{"first_name":"Karthik","last_name":"Janakiraman","link":"https:\\/\\/www.facebook.com\\/kartz","id":"594144688"\},\{"first_name":"Babu","last_name":"Reddy","link":"https:\\/\\/www.facebook.com\\/babu.reddy.58118","id":"601612387"\},\{"first_name":"Shefali","last_name":"Pandey","link":"https:\\/\\/www.facebook.com\\/shefali.p","id":"609502811"\},\{"first_name":"Nayan","last_name":"Dambalkar","link":"https:\\/\\/www.facebook.com\\/nayan.dambalkar","id":"667250872"\},\{"first_name":"Sameer","last_name":"Chebbi","link":"https:\\/\\/www.facebook.com\\/sameer.chebbi","id":"667713115"\},\{"first_name":"Anusha","last_name":"Chebbi","link":"https:\\/\\/www.facebook.com\\/anushac","id":"668157909"\},\{"first_name":"Param","last_name":"Rama","link":"https:\\/\\/www.facebook.com\\/param.rama","id":"673214445"\},\{"first_name":"Nivedita","last_name":"Raman","link":"https:\\/\\/www.facebook.com\\/nivedita.raman","id":"673436195"\},\{"first_name":"Sridhar","last_name":"Kulkarni","link":"https:\\/\\/www.facebook.com\\/sridhar.kulkarni.50","id":"675726107"\},\{"first_name":"Prasun","last_name":"Choudhury","link":"https:\\/\\/www.facebook.com\\/prasun.choudhury.9","id":"693863066"\},\{"first_name":"Satish","last_name":"Puranik","link":"https:\\/\\/www.facebook.com\\/satishpuranik","id":"703990788"\},\{"first_name":"Venkatesh","last_name":"Kulkarni","link":"https:\\/\\/www.facebook.com\\/venkatesh.kulkarni.7165","id":"705504772"\},\{"first_name":"Pururav","last_name":"Thotuireddy","link":"https:\\/\\/www.facebook.com\\/pururav.thotuireddy","id":"718539722"\},\{"first_name":"David","last_name":"Kim","link":"https:\\/\\/www.facebook.com\\/davidjkimmer","id":"730263831"\},\{"first_name":"Sandeep","last_name":"Nagarkar","link":"https:\\/\\/www.facebook.com\\/sandeep.nagarkar.92","id":"734887346"\},\{"first_name":"Dheeraj","last_name":"Singh","link":"https:\\/\\/www.facebook.com\\/dheeraj.singh","id":"755760000"\},\{"first_name":"Mahantesh","last_name":"Bandargal","link":"https:\\/\\/www.facebook.com\\/mahantesh.bandargal","id":"768568791"\},\{"first_name":"M.Shyam","last_name":"Sundar","link":"https:\\/\\/www.facebook.com\\/m.shyam.sundar.7","id":"789703420"\},\{"first_name":"Edwin","last_name":"Pradeep","link":"https:\\/\\/www.facebook.com\\/edwin.j.pradeep","id":"834965488"\},\{"first_name":"Somshekar","last_name":"Rane","link":"https:\\/\\/www.facebook.com\\/srrane","id":"1035686189"\},\{"first_name":"Shibu","last_name":"Michael","link":"https:\\/\\/www.facebook.com\\/shibu","id":"1074135174"\},\{"first_name":"Hanamantappa","last_name":"Bhajantri","link":"https:\\/\\/www.facebook.com\\/hanamantappa.bhajantri","id":"1096265603"\},\{"first_name":"Janesh","last_name":"Subrahmanyan","link":"https:\\/\\/www.facebook.com\\/janesh.subrahmanyan","id":"1112708561"\},\{"first_name":"Sunil","last_name":"Jituri","link":"https:\\/\\/www.facebook.com\\/sunil.jituri","id":"1154744906"\},\{"first_name":"Pooja","last_name":"Jain","link":"https:\\/\\/www.facebook.com\\/pooja.jain8","id":"1188596312"\},\{"first_name":"Amit","last_name":"Kulkarni","link":"https:\\/\\/www.facebook.com\\/kulkarni.amit","id":"1218058363"\},\{"first_name":"Vinayak","last_name":"Kalabhavi","link":"https:\\/\\/www.facebook.com\\/vinayak.kalabhavi","id":"1252868336"\},\{"first_name":"Anjali","last_name":"Singh","link":"https:\\/\\/www.facebook.com\\/anjali.singh.961","id":"1267461319"\},\{"first_name":"Anwar","last_name":"Zaki","link":"https:\\/\\/www.facebook.com\\/anwar.zaki2","id":"1280169832"\},\{"first_name":"Kedar","last_name":"Shahagadkar","link":"https:\\/\\/www.facebook.com\\/kedar.shahagadkar","id":"1286938743"\},\{"first_name":"Basavaraj","last_name":"Bendigeri","link":"https:\\/\\/www.facebook.com\\/basavarajb","id":"1291545446"\},\{"first_name":"Tallam","last_name":"Kumar","link":"https:\\/\\/www.facebook.com\\/tallam.h.kumar","id":"1333480202"\},\{"first_name":"Sajan","last_name":"Krishnankutty","link":"https:\\/\\/www.facebook.com\\/sajan.krishnankutty","id":"1335568372"\},\{"first_name":"Mahendra","last_name":"Surpur","link":"https:\\/\\/www.facebook.com\\/mahendra.surpur","id":"1363449776"\},\{"first_name":"Gururaj","last_name":"Kulkarni","link":"https:\\/\\/www.facebook.com\\/gururaj.kulkarni2","id":"1366481014"\},\{"first_name":"Rekha","last_name":"Vivek","link":"https:\\/\\/www.facebook.com\\/rekha.vivek.127","id":"1406321407"\},\{"first_name":"Deepak","last_name":"Kulkarni","link":"https:\\/\\/www.facebook.com\\/dk.az.us","id":"1450622922"\},\{"first_name":"Mathew","last_name":"Abraham","link":"https:\\/\\/www.facebook.com\\/mathew.abraham.7355","id":"1477574978"\},\{"first_name":"Solomon","last_name":"Joseph","link":"https:\\/\\/www.facebook.com\\/solomon.joseph.790","id":"1485035778"\},\{"first_name":"Ravikiran","last_name":"Joshi","link":"https:\\/\\/www.facebook.com\\/rkiran.josh","id":"1485493195"\},\{"first_name":"Anand","last_name":"Amarshetti","link":"https:\\/\\/www.facebook.com\\/anand.amarshetti","id":"1532115379"\},\{"first_name":"Naveed","last_name":"Nazim","link":"https:\\/\\/www.facebook.com\\/profile.php?id=1574896261","id":"1574896261"\},\{"first_name":"Amit","last_name":"Tripathi","link":"https:\\/\\/www.facebook.com\\/amit.tripathi.712","id":"1598073985"\},\{"first_name":"Karthik","last_name":"Uchila","link":"https:\\/\\/www.facebook.com\\/karthik.uchila","id":"1611731128"\},\{"first_name":"Lakshmi","last_name":"Athreya","link":"https:\\/\\/www.facebook.com\\/lakshmiathreya","id":"1671276705"\},\{"first_name":"Manisha","last_name":"Singh","link":"https:\\/\\/www.facebook.com\\/manisha.singh.100483","id":"1679773369"\},\{"first_name":"Sankarananda","last_name":"Basak","link":"https:\\/\\/www.facebook.com\\/sankarananda.basak","id":"1739608176"\},\{"first_name":"Arpan","last_name":"Biswas","link":"https:\\/\\/www.facebook.com\\/biswas.arpan","id":"1802136788"\},\{"first_name":"Prashant","last_name":"Aradhyamath","link":"https:\\/\\/www.facebook.com\\/aradhyamath36","id":"100000058464726"\},\{"first_name":"Nitin","last_name":"Karande","link":"https:\\/\\/www.facebook.com\\/nitin.s.karande","id":"100000062911764"\},\{"first_name":"Nagesh","last_name":"Shiggaon","link":"https:\\/\\/www.facebook.com\\/nagesh.shiggaon","id":"100000068908862"\},\{"first_name":"Chetan","last_name":"Jakaraddi","link":"https:\\/\\/www.facebook.com\\/chetan.jakaraddi","id":"100000090436148"\},\{"first_name":"Anup","last_name":"Kumar","link":"https:\\/\\/www.facebook.com\\/profile.php?id=100000181339645","id":"100000181339645"\},\{"first_name":"Amit","last_name":"Tripathi","link":"https:\\/\\/www.facebook.com\\/amit.tripathi.7503","id":"100000187698954"\},\{"first_name":"Satish","last_name":"Guggari","link":"https:\\/\\/www.facebook.com\\/satish.guggari","id":"100000194766991"\},\{"first_name":"Girish","last_name":"Panicker","link":"https:\\/\\/www.facebook.com\\/girish.panicker.756","id":"100000212907313"\},\{"first_name":"Anand","last_name":"Walishetti","link":"https:\\/\\/www.facebook.com\\/awalishetti","id":"100000273042589"\},\{"first_name":"Uday","last_name":"Uddgire","link":"https:\\/\\/www.facebook.com\\/uday.uddgire","id":"100000287705026"\},\{"first_name":"Shashibhanu","last_name":"Sarvade","link":"https:\\/\\/www.facebook.com\\/shashibhanu.sarvade","id":"100000320652078"\},\{"first_name":"Manisha","last_name":"Singh","link":"https:\\/\\/www.facebook.com\\/manisha.singh.9028","id":"100000360185185"\},\{"first_name":"Sudhi","last_name":"Varakhedi","link":"https:\\/\\/www.facebook.com\\/sudhi.varakhedi","id":"100000388094898"\},\{"first_name":"Praveen","last_name":"Kulkarni","link":"https:\\/\\/www.facebook.com\\/praveen.kulkarni.56","id":"100000460811619"\},\{"first_name":"Bernard","last_name":"Bankin","link":"https:\\/\\/www.facebook.com\\/bernard.bankin","id":"100000468136051"\},\{"first_name":"Veeranjaneyulu","last_name":"Ponnam","link":"https:\\/\\/www.facebook.com\\/veeranjaneyulup","id":"100000508710608"\},\{"first_name":"Vinayak","last_name":"Nijamkar","link":"https:\\/\\/www.facebook.com\\/vinayak.nijamkar.3","id":"100000523477250"\},\{"first_name":"Vijaykumar","last_name":"Gayakwad","link":"https:\\/\\/www.facebook.com\\/gayakwadvijay","id":"100000534240609"\},\{"first_name":"Basavaraj","last_name":"Navalgund","link":"https:\\/\\/www.facebook.com\\/basavaraj.navalgund","id":"100000728035962"\},\{"first_name":"Sathya","last_name":"Araveti","link":"https:\\/\\/www.facebook.com\\/sathya.araveti","id":"100000741154223"\},\{"first_name":"DrSadiq","last_name":"Shaikh","link":"https:\\/\\/www.facebook.com\\/Dr.Sadiqs","id":"100000831527469"\},\{"first_name":"Ravi","last_name":"Tammanashastri","link":"https:\\/\\/www.facebook.com\\/ravi.tammanashastri","id":"100000985123500"\},\{"first_name":"Murli","last_name":"Venkataramu","link":"https:\\/\\/www.facebook.com\\/murli.venkataramu","id":"100001038998377"\},\{"first_name":"Srinivasan","last_name":"Nitya","link":"https:\\/\\/www.facebook.com\\/srinivasan.nitya","id":"100001076838349"\},\{"first_name":"Ajith","last_name":"Radhakrishna","link":"https:\\/\\/www.facebook.com\\/ajith.radhakrishna","id":"100001077534750"\},\{"first_name":"Satish","last_name":"Byali","link":"https:\\/\\/www.facebook.com\\/satish.byali","id":"100001155739510"\},\{"first_name":"Srinivas","last_name":"Mulgund","link":"https:\\/\\/www.facebook.com\\/srinivas.mulgund","id":"100001306098879"\},\{"first_name":"Ganesh","last_name":"Gondi","link":"https:\\/\\/www.facebook.com\\/saiganesh.gondi","id":"100001640616175"\},\{"first_name":"Bhavana","last_name":"Pandurangi","link":"https:\\/\\/www.facebook.com\\/bhavana.pandurangi","id":"100001698859841"\},\{"first_name":"Jagadish","last_name":"Kundangar","link":"https:\\/\\/www.facebook.com\\/jagadish.kundangar","id":"100001975365013"\},\{"first_name":"Vinayak","last_name":"Habib","link":"https:\\/\\/www.facebook.com\\/sullohabib","id":"100002163682223"\},\{"first_name":"Suhas","last_name":"Krishnamurthy","link":"https:\\/\\/www.facebook.com\\/suhas.krishnamurthy.3","id":"100002277403415"\},\{"first_name":"Chandru","last_name":"Hadli","link":"https:\\/\\/www.facebook.com\\/chandru.hadli","id":"100002383547075"\},\{"first_name":"Guruvinder","last_name":"Ghai","link":"https:\\/\\/www.facebook.com\\/guruvinder.ghai","id":"100002512004569"\},\{"first_name":"Vinay","last_name":"Kulkarni","link":"https:\\/\\/www.facebook.com\\/vinay.kulkarni.37017","id":"100003085791863"\},\{"first_name":"Prashant","last_name":"Shetty","link":"https:\\/\\/www.facebook.com\\/prashant.shetty.73307","id":"100003118972494"\}],"paging":\{"next":"https:\\/\\/graph.facebook.com\\/667687312\\/friends?fields=first_name,last_name,link&access_token=CAAUVPLXgpCIBANvUW6g7bvOeUZC0ZBzKdZByNJJPCF1DwqxWBmglQpLRkjrfCvb162QTIUgk3ZBxtuoNMSadg0YaZCT25NSeGBZAyxE3gx7lXl534vUh7gIFpGJZBl7HeOeQFFea5KZBGfJhGhiRRfENZBYIhB061ZC08ZA5klX0tJ8UihoseASnjYJGFcSbZB9MH3gZD&limit=5000&offset=5000&__after_id=100003118972494"\}\}\}\
+\
+\
+
+\f5\fs24 \cf0 \cb1 \CocoaLigature1 \
+\
+\pard\pardeftab720\sl480
+
+\f6\b\fs28 \cf17 \cb18 var
+\f1\b0 \cf4  mapFunction \cf19 =\cf4  
+\f6\b \cf17 function
+\f1\b0 \cf4 () \{\
+     
+\f6\b \cf17 var
+\f1\b0 \cf4  key \cf19 =\cf4  
+\f6\b \cf17 this
+\f1\b0 \cf4 .id;\
+     
+\f6\b \cf17 var
+\f1\b0 \cf4  value \cf19 =\cf4  \{\
+                   userid\cf19 :\cf4  
+\f6\b \cf17 this
+\f1\b0 \cf4 .userid,\
+                   total_time\cf19 :\cf4  
+\f6\b \cf17 this
+\f1\b0 \cf4 .length,\
+                   count\cf19 :\cf4  \cf20 1\cf4 ,\
+                   avg_time\cf19 :\cf4  \cf20 0\cf4 \
+                   \};\
+      emit( key, value );\
+\};\
+\pard\pardeftab720
+
+\f7\fs26 \cf21 \cb22 \
+\pard\pardeftab720\sl480
+
+\f6\b\fs28 \cf17 \cb18 var
+\f1\b0 \cf4  reduceFunction \cf19 =\cf4  
+\f6\b \cf17 function
+\f1\b0 \cf4 (key, values) \{\
+\
+     
+\f6\b \cf17 var
+\f1\b0 \cf4  reducedObject \cf19 =\cf4  \{\
+               userid\cf19 :\cf4  key,\
+               total_time\cf19 :\cf4  \cf20 0\cf4 ,\
+               count\cf19 :\cf20 0\cf4 ,\
+               avg_time\cf19 :\cf20 0\cf4 \
+              \};\
+\
+      values.forEach( 
+\f6\b \cf17 function
+\f1\b0 \cf4 (value) \{\
+                                                  \
+      reducedObject.total_time \cf19 +=\cf4  value.total_time;\
+                                                \
+      reducedObject.count \cf19 +=\cf4  value.count;\
+       \}\
+                                      );\
+       
+\f6\b \cf17 return
+\f1\b0 \cf4  reducedObject;\
+ \};\
+\
+\pard\pardeftab720
+
+\fs24 \cf23 \cb1 \'91{\field{\*\fldinst{HYPERLINK "https://graph.facebook.com/"}}{\fldrslt https://graph.facebook.com}}/\cf0 fql?q=SELECT+uid2+FROM+friend+WHERE+uid1=me()';\
+{\field{\*\fldinst{HYPERLINK "https://graph.facebook.com/"}}{\fldrslt \cf23 https://graph.facebook.com}}\cf23 /\cf0 fql?q="SELECT uid,name,first_name,middle_name,last_name,pic_square,hometown_location,current_location,profile_url,email,website FROM user WHERE uid IN (SELECT uid2 FROM friend WHERE uid1 = me())\'94;\
+\pard\pardeftab720\sl480
+
+\f5 \cf0 \
+Hi Shabd / Shreesha,\
+I got the Facebook access working, by separating the deployed and my local as two separate app configs.\
+Have deployed the modified app , provided url based view for different users\
+http://cryptic-temple-1595.herokuapp.com/contacts?userId=0 ( Default view )\
+http://cryptic-temple-1595.herokuapp.com/contacts?userId=1 ( mine )\
+http://cryptic-temple-1595.herokuapp.com/contacts?userId=2 ( Shabd )\
+http://cryptic-temple-1595.herokuapp.com/contacts?userId=3 ( Shreesha )\
+\
+Each user will view only his contacts which are references in the master UAB contact collection.\
+Currently i am getting the public access data from Facebook i.e name, first_name, last_name and link. The other parameters are coming as null. Will figure that out, probably a permission issue in Facebook.\
+Otherwise  the information from gmail, linked-in and Facebook is synched. I will probably have to separate out the conflicts and unresolved contacts.  Next items on the task list.\
+thanks\
+raghu\
+\
+\pard\pardeftab720
+
+\f3\fs22 \cf0 Tata motors\
+\
+Axis bank\
+ICICIBank\
+SBI\
+\
+//BankNifty  12500 - 550\
+             12200\'97   165\
+\
+// nifty 6650 120\
+HCLTech\
+UnitedSpirits\
+\
+\
+Nifty\
+\
+\
+IDFC\
+LIC Hsg\
+LTFinance\
+Banknifty\
+\
+Hi All,\
+Here are the offline discussion notes that we had earlier during the day:\
+Question: How do we import iCloud / iPhone contacts.\
+   \
+Approach 1: Export these contacts from iCloud.com and then upload to the UAB application to consume, since the export is in vCard format.\
+\
+Approach 2: The Introductions App to do the additional task, the  sequence is as follows\
+          2.1. When the user installs and signs in to the Introductions App, the iPhone contacts will be exported to the UAB back end ( the MongoDB \'91iPhoneContacts\'92 collection).\
+          2.2. The UAB will have the iPhone contacts for the user by default as part of the Introductions App sign up.\
+          2.3. From the Introductions app we can provide a WebView where the UAB functionality will be embedded.\
+          2.4. User can import and sync Facebook, Linked-in, gmail ( and yahoo, outlook ) with the UAB. ( Like the current deployed web app )\
+          2.5. The UAB will use the same authentication mechanism as the Introductions App.\
+\
+Approach 1 would have mean export and then import as part of creating the iPhone contacts.\
+Approach 2 is more intuitive.\
+\
+Hence we have decided to take Approach 2. Any simpler ones you think that can be explored? Please let me know\
+\
+regards\
+raghu\
+\
+Hi Shantanu\
+I have redeployed the UAB app which has the REST API to get the UAB for a user\
+The API format is http://cryptic-temple-1595.herokuapp.com/uab/\{userId\}\
+\
+Example URLs that will fetch you the data\
+http://cryptic-temple-1595.herokuapp.com/uab/raghu\
+http://cryptic-temple-1595.herokuapp.com/uab/0\
+http://cryptic-temple-1595.herokuapp.com/uab/1  \
+\
+You can create you own using the following link and then fetch UAB \
+http://cryptic-temple-1595.herokuapp.com/contacts?userId=shantanu\
+http://cryptic-temple-1595.herokuapp.com/uab/shantanu  \
+\
+Please try and let me know how it goes.\
+\
+regards\
+raghu \
+\
+Hi Chethan\
+Is it possible to send each contact with the following properties as a json array\
+first name, last name,mobile number,home number,homeemail, workemail, address.\
+\
+This will be a POST request with a format\
+\{\'93userid\'94:\'94chethan\'94, \'93contacts\'94:[\
+	\{\
+		\'93firstname\'94:\'94\'94,last name:\'94\'94,\
+		\'94mobilenumber\'94:[\
+			\{\'93number\'94:\'94\'94,\'94number\'94:\'94\'94,\'94number\'94:\'94\'94\}\
+		],\
+		\'94home number\'94:[\
+			\{\'93number\'94:\'94\'94,\'94number\'94:\'94\'94,\'94number\'94:\'94\'94\}\
+		],\
+		\'94homeemail\'94:[\
+			\{\'93email\'94:\'94\'94,\'94email\'94:\'94\'94,\'94email\'94:\'94\'94\}\
+		],\
+		workemail:[\
+			\{\'93email\'94:\'94\'94,\'94email\'94:\'94\'94,\'94email\'94:\'94\'94\}\
+		]\
+		,address:[\
+			\{\'93address\'94:\'94\'94,\'94address\'94:\'94\'94\}\
+		]\
+      \},\{\'85..\},\{\'85.\}\
+]\
+\}\
+\
+thanks\
+raghu\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f2 \cf0 \CocoaLigature0 pod 'JazzHands', :path => 'JazzHands/'\
+\
+\
+BEGIN:vcard\
+VERSION:3.0\
+N:House;Gregory;;Dr;MD\
+FN:Dr. Gregory House M.D.\
+END:vcard\
+\
+Export mySink.jar and add it to flume class path\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f3 \cf0 \CocoaLigature1 run flume to see the data being ingested from a spool directory and store in the DB\
+\pard\pardeftab720\sl360
+\cf0  \
+{\field{\*\fldinst{HYPERLINK "https://developers.google.com/google-apps/carddav/"}}{\fldrslt https://developers.google.com/google-apps/carddav/}}
+\f5\fs24 \
+git clone https://rnandan273@bitbucket.org/crucialbits/introductions.git\
+\
+Untar the file\
+Install Python\
+run the server using :\
+python FirstPython/FirstPython.py\
+\
+The app will use a cloud mongo db.\
+Check the app using\
+ {\field{\*\fldinst{HYPERLINK "http://127.0.0.1:5000/index.html"}}{\fldrslt http://127.0.0.1:5000/index.html}}\
+{\field{\*\fldinst{HYPERLINK "http://127.0.0.1:5000/index.html"}}{\fldrslt http://127.0.0.1:5000/}}recipes\
+Enjoy and let me know if something doesn\'92t work\
+raghu\
+\
+Today i met Shantanu and here are the notes that we discussed\
+The UAB OAuth process is as follows\
+\
+1. Client calls LinkedIn Authentication api \
+2. LinkedIn authenticates and redirects to a registered URL\
+3. Server retrieves the access token  \
+4. Server invoked REST API\'92s with this token.\
+5. Server processed the response,\
+6. Client receives the response.\
+\
+The above is true for gmail and Facebook also.\
+\
+However since we are using linked in authentication to sign in to the app, this token can be used to bypass the steps 1,2,3, by storing the access token  on the server side and call only 4,5,6. \
+This way we can eliminate the duplicate Linkedin authentication process.\
+\
+We can also store the gmail and Facebook token on the server side and on successful authentication and do 4,5,6 ( unless the tokens have expired , in which case we have to do 1,2,3).\
+\
+regards\
+raghu\
+\
+\
+\
+\
+'/longNiftyStraddle\'92,\
+'/shortNiftyStraddle\'92,\
+'/longNiftyStrangle\'92,\
+'/shortNiftyStrangle'\
+'/longNiftyCallButterfly'\
+'/shortNiftyCallButterfly'\
+'/longNiftyPutButterfly'\
+'/shortNiftyPutButterfly'\
+'/longNiftyCallSpread'\
+'/shortNiftyCallSpread'\
+'/longNiftyPutSpread'\
+'/shortNiftyPutSpread'\
+'/longIronCondor'\
+'/shortIronCondor\'92\
+'/longIronButterfly'\
+'/shortIronButterfly'\
+\'91/longCondorWithCalls'\
+'/shortCondorWithCalls'\
+'/shortCondorWithPuts'\
+'/longCondorWithPuts'\
+'/SkipStrikeButterflyWithCalls')\
+'/SkipStrikeButterflyWithPuts\'92\
+'/SlingShot'\
+'/ChristmasTreeWithCalls'\
+\
+\
+Changes to the following in Application.java\
+	- getUAB\
+	- gmailConnectionsForUser\
+	- linkedInConnectionsForUser\
+	- facebookConnectionsForUser\
+\
+Modified the following files\
+routes\
+main.scala.html\
+index.scala.html\
+added bootstrap.min.css to public/stylesheets\
+\
+Hi Sid,\
+Here are some prototypes that were developed in my free time. \
+Please have a look at my deployments to have an idea about my capability.\
+\
+Derivatives trading toolbox http://optionlab.herokuapp.com\
+            Technologies used : python flask,  REST services, angularjs, mongodb and yahoo finance api\'92s\
+Social Media data sync app at http://cryptic-temple-1595.herokuapp.com/contacts?userId=adhrit\
+            Technologies used : Play 2.2, scala, mongodb, OAuth2.0 and social media api\'92s\
+AdCanvas - A web based  WYSIWYG editor  http://adcanvas.herokuapp.com\
+	 Technologies used : flex and flash\
+\
+My detailed resume is attached to this mail.\
+\
+I will most probably take your test project in the last week of this month as i am not able to spare a week because of my current commitments.\
+\
+regards\
+raghu\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f1 \cf2 \cb3 \CocoaLigature0 2014-05-28 17:31:01,888 - [INFO] - from application in play-akka.actor.default-dispatcher-9\
+UPDATING data for 5380d265e4b06c6735474c65\
+\
+2014-05-28 17:31:10,174 - [INFO] - from application in play-akka.actor.default-dispatcher-9\
+REST API to get UAB for 5380d265e4b06c6735474c65\
+\
+2014-05-28 17:31:10,177 - [INFO] - from application in play-akka.actor.default-dispatcher-9\
+ USER => 5380d265e4b06c6735474c65 has --> 2267 contacts\
+\
+56709\
+\
+133179\
+Deploy a flask mongodb python app on Heroku\
+\
+To deploy a python app go the root folder\
+create Procfile with the content 
+\f2\fs22 \cf1 \cb24 web: gunicorn FirstPython:app:w
+\f1\fs24 \cf2 \cb3 \
+\pard\pardeftab720\sl360
+
+\f3 \cf22 \cb25 \CocoaLigature1     pip freeze > requirements.txt
+\f1 \cf2 \cb3 \CocoaLigature0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf2 	
+\f2\fs22 \cf1 \cb24 git init\
+    git add . -A\
+    git commit -m 'initial commit'\
+    heroku create herokufood\
+    git push heroku master\
+\
+category\
+keywords\
+Domain\
+\
+\pard\pardeftab720
+
+\f3 \cf0 \cb1 \CocoaLigature1 \
+Task 1: Background data sync\
+Once we have the auth token, a scheduled task to do the account sync.\
+It has to invoke\
+\
+synchLinkedInForUser(String userId) and\
+linkedInConnectionsSync(String userId)  \
+synchFacebookForUser(String userId)\
+synchGmailForUser(String userId)\
+\
+Task 2: Error handling during linked in data sync\
+This should not happen frequently as the user would have signed in to the app  and his token would be fresh. \
+But in case it happens we have to send appropriate message \
+\
+linkedInConnectionsSync(String userId)\
+the redirect should go to\
+synchLinkedIn()\
+\
+\pard\pardeftab720\sl300
+
+\f1\fs28 \cf26 \cb27 Akka\cf15 .\cf0 system\cf15 ().\cf0 scheduler\cf15 ().\cf0 scheduleOnce\cf15 (\cf0 \
+        \cf26 Duration\cf15 .\cf0 create\cf15 (\cf28 24*60\cf15 ,\cf0  \cf26 TimeUnit\cf15 .\cf0 MINUTES
+\fs30 \cf21 \
+
+\fs28 \cf15 ),\cf0 \
+        \cf29 new\cf0  \cf26 Runnable\cf15 ()\cf0  \cf15 \{\cf0 \
+            \cf29 public\cf0  \cf29 void\cf0  run\cf15 ()\cf0  \cf15 \{\cf0 \
+                
+\f3\fs22 \cb1 synchLinkedInForUser(String userId) and\
+\pard\pardeftab720
+\cf0 				linkedInConnectionsSync(String userId)  \
+				synchFacebookForUser(String userId)\
+				synchGmailForUser(String userId)
+\f1\fs28 \cb27 \
+\pard\pardeftab720\sl300
+\cf0             \cf15 \}\cf0 \
+        \cf15 \},\cf0 \
+        \cf26 Akka\cf15 .\cf0 system\cf15 ().\cf0 dispatcher\cf15 ()\cf0 \
+\cf15 );
+\fs30 \cf21 \
+\
+Delta Sync for UAB:\
+Handling delta sync-\
+lastfetchTime = Store timestamp when the uab for the user was last fetched\
+lastSynchTimeForEachContact = Store the timestamp for each uab update from either of the accounts ( gmail, linked in, Facebook and phone ).\
+\
+On the next fetch export those contacts for the uab whose  ( lastfetchTime < lastSyncTimeForEachContact ).\
+\
+We will handle this at the account level and not at each attribute level. Will that be ok?\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f4\fs26 \cf30 \cb1 Handling gzip files :\
+{\field{\*\fldinst{HYPERLINK "http://java.dzone.com/articles/understanding-play-filter-api"}}{\fldrslt http://java.dzone.com/articles/understanding-play-filter-api}}\
+\
+Client actions\
+\
+1. Fetch the complete address book\
+ 	/uab/<userId>/<slice>/<pageNum>/ \
+\
+2. Signal the delta to be enabled\
+	/uabDeltaEnable/<userId> \
+\
+3. Signal the delta to be disable\
+	/uabDeltaDisable/<userId>\
+\
+4./uab/<userId>/<slice>/<pageNum>/<delta>\
+\
+Client can do the following\
+- Fetch address book and signal delta - call 1, call 2\
+- Fetch the address book and disable delta - call 1, call 3\
+- Disable delta - call 2.\
+- Delta disabled, get the complete address book - call 3, call 1\
+- Delta enabled, get the delta of the address book - call 2, call 1\
+- Disable or Enable and get the address book - call 4\
+\
+Depending on the sequence of the actions from the client, the get UAB contacts will behave differently.\
+\
+Addded in routes\
+\pard\pardeftab720
+
+\f3\fs22 \cf31 GET\cf0      \cf32 /uabEnableDelta/\cf33 :id\cf0                   \cf34 @\cf35 controllers.\cf36 Application\cf34 .\cf0 enableDelta\cf34 (id:String)\cf0 \
+\cf31 GET\cf0      \cf32 /uabDisableDelta/\cf33 :id\cf0                   \cf34 @\cf35 controllers.\cf36 Application\cf34 .\cf0 disableDelta\cf34 (id:String)\
+Modified in routes\
+\cf31 GET\cf0      \cf32 /uab/\cf33 :id/:slice/:pageNum/:enableDelta\cf0                    \cf34 @\cf35 controllers.\cf36 Application\cf34 .\cf0 getUAB\cf34 (id:String,slice:Int,pageNum:Int,enableDelta:Boolean)\cf0 \
+\cf34 \
+\
+Modified Application.java ( added a new parameter call enableDelta )\
+\pard\pardeftab720
+\cf0 getUAB(String userId,Integer slice,Integer pageNum,\cf5 boolean\cf0  enableDelta)\
+\
+Added new method in UABContact\
+getDeltaUABContacts(Date lastAccessDate,\cf5 int\cf0  slice,\cf5 int\cf0  pageNum,String userId)
+\f4\fs26 \cf30 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf30 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f1\fs30 \cf21 \cb27 To install elastic search pllugin\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f2\fs22 \cf0 \cb1 \CocoaLigature0 ./plugin --url file:///github.com/elasticsearch/elasticsearch-mapper-attachments -install elasticsearch/elasticsearch-mapper-attachments/2.0.0\
+\pard\pardeftab720
+
+\fs30 \cf21 \CocoaLigature1 sudo bin/plugin \'97url {\field{\*\fldinst{HYPERLINK "https://github.com/OlegKunitsyn/elasticsearch-browser"}}{\fldrslt file:///github.com/OlegKunitsyn/elasticsearch-browser}} -install OlegKunitsyn/elasticsearch-browser\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\fs22 \cf0 \CocoaLigature0 \
+\
+\
+\pard\pardeftab720\sl300
+
+\f3\fs24 \cf37 \cb38 \CocoaLigature1 curl\cf39  -\cf40 XPUT\cf39  \cf41 'http://localhost:9200/_river/sampleindex/_meta'\cf39  -\cf40 d\cf39  \cf41 '\{\cf1  \cf41 \cb0 "type": "mongodb",\cb38 "mongodb": \{\cb0 "servers": [\{"host":"127.0.0.1","port":27017\}],\cb38  "db": \'93todo\'94,\cb0 "collection": \'93contacts\'94,\cb38 "gridfs": false\cb0 \'a0\},\cb38 "index": \{\cb0 "name": "sampleESindexname",\cb38 "type": "sampleEStype"\cb0 \}\cb38 \}'\cf1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f1\fs30 \cf21 \cb27 \
+123\
+Hi,\
+I have downloaded the source from {\field{\*\fldinst{HYPERLINK "https://github.com/usergrid/usergrid/"}}{\fldrslt https://github.com/usergrid/usergrid/}}\
+and trying to build by following the instructions given here \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+{\field{\*\fldinst{HYPERLINK "https://github.com/usergrid/usergrid/tree/master/stack#requirements"}}{\fldrslt \cf21 https://github.com/usergrid/usergrid/tree/master/stack#requirements}}\
+However when i execute  
+\f2\fs24 \cb22 mvn clean install -DskipTests=true
+\fs26 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f1\fs30 \cf21 \cb27 i keep getting the following error\
+\
+AP08J5372\
+\
+\
+\pard\pardeftab720\sl380
+
+\f2\fs24 \cf21 \cb22 Creation:\
+\
+curl -X POST -d 'organization=myfirstorg&username=myadmin&name=Admin&email=admin@example.com&password=password' http://localhost:8080/management/organizations\
+\pard\pardeftab720\sl380
+
+\fs26 \cf21 \
+\pard\pardeftab720\sl360
+
+\f3 \cf21 \cb16 curl 'http://localhost:8080/management/token?grant_type=password&username=myadmin&password=password'\
+\pard\pardeftab720\sl380
+
+\f2\fs24 \cf21 \cb22 give admin access token\
+\pard\pardeftab720\sl380
+
+\fs26 \cf21 \
+\pard\pardeftab720\sl380
+
+\fs24 \cf21 curl -H "Authorization: Bearer 
+\f3\fs20 \cf16 \cb0 \CocoaLigature0 YWMtNr7dvgEFEeSt8esM17r7mwAAAUcVYjR6WFbm5A7q4fg_k2PS1eA-YBcqACE
+\f2\fs24 \cf21 \cb22 \CocoaLigature1 " -H "Content-Type: application/json" -X POST -d '\{ "name":"myapp" \}' http://localhost:8080/management/orgs/myfirstorg/apps\
+\
+curl -H "Authorization: Bearer 
+\f3\fs20 \cf16 \cb0 \CocoaLigature0 YWMtNr7dvgEFEeSt8esM17r7mwAAAUcVYjR6WFbm5A7q4fg_k2PS1eA-YBcqACE
+\f2\fs24 \cf21 \cb22 \CocoaLigature1 " -X POST "http://localhost:8080/myfirstorg/myapp/users" -d '\{ "username":"myuser", "password":"mypassword", "email":"user@example.com" \}'
+\fs26 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f3\fs20 \cf16 \cb0 \CocoaLigature0 curl 'http://localhost:8080/myfirstorg/myapp/token?grant_type=password&username=myuser&password=mypassword'
+\fs26 \cf21 \cb16 \CocoaLigature1 \
+\pard\pardeftab720\sl380
+
+\f2\fs24 \cf21 \cb22 Gives user token\
+\
+curl -H "Authorization: Bearer 
+\f3\fs20 \cf16 \cb0 \CocoaLigature0 YWMthIgySAEFEeS43CODqXhWrAAAAUcVZDJCbLnBvprwXtsg1bYxq0v-Ah_3M9Y
+\f2\fs24 \cf21 \cb22 \CocoaLigature1 " -X POST -d '[ \{ "cat":"fluffy" \}, \{ "fish": \{ "gold":2, "oscar":1 \} \} ]' http://localhost:8080/myfirstorg/myapp/pets\
+\
+curl -H "Authorization: Bearer 
+\f3\fs20 \cf16 \cb0 \CocoaLigature0 YWMthIgySAEFEeS43CODqXhWrAAAAUcVZDJCbLnBvprwXtsg1bYxq0v-Ah_3M9Y
+\f2\fs24 \cf21 \cb22 \CocoaLigature1 " -H "Content-Type: application/json" -X GET  "http://localhost:8080/myfirstorg/myapp
+\f3\fs26 \cb16 /users?ql=select * where name = \'91Gladys Kravitz\'92\
+\
+Queryies:\
+
+\f2\fs24 \cb22 curl -H "Authorization: Bearer 
+\f3\fs20 \cf16 \cb0 \CocoaLigature0 YWMtNr7dvgEFEeSt8esM17r7mwAAAUcVYjR6WFbm5A7q4fg_k2PS1eA-YBcqACE
+\f2\fs24 \cf21 \cb22 \CocoaLigature1 " -H "Content-Type: application/json" -X GET  http://localhost:8080/management/orgs/myfirstorg/apps\
+\
+curl -H "Authorization: Bearer 
+\f3\fs20 \cf16 \cb0 \CocoaLigature0 YWMtNr7dvgEFEeSt8esM17r7mwAAAUcVYjR6WFbm5A7q4fg_k2PS1eA-YBcqACE
+\f2\fs24 \cf21 \cb22 \CocoaLigature1 " -X GET "http://localhost:8080/myfirstorg/myapp/users"
+\f3\fs26 \cb16 \
+
+\f2\fs24 \cb22 curl -H "Authorization: Bearer 
+\f3\fs20 \cf16 \cb0 \CocoaLigature0 YWMtNr7dvgEFEeSt8esM17r7mwAAAUcVYjR6WFbm5A7q4fg_k2PS1eA-YBcqACE
+\f2\fs24 \cf21 \cb22 \CocoaLigature1 " -X GET "http://localhost:8080/myfirstorg/myapp/users
+\f1\fs26 \cf15 \cb42 ?\cf0 ql\cf15 =\cf43 username='myuser'\'94\cf44 \
+\pard\pardeftab720\sl380
+
+\f2 \cf21 \cb22 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\fs22 \cf0 \cb1 \CocoaLigature0 SEVERE: Start of node exception: null\
+java.lang.NullPointerException\
+	at clojure.lang.Reflector.invokeNoArgInstanceMember(Reflector.java:296)\
+	at vmfest.virtualbox.host$add_one_host_only_interface.invoke(host.clj:29)\
+	at vmfest.virtualbox.host$add_host_only_interface_STAR_.invoke(host.clj:42)\
+	at vmfest.virtualbox.host$add_host_only_interface.invoke(host.clj:132)\
+	at vmfest.virtualbox.machine_config$attach_to_host_only.invoke(machine_config.clj:186)\
+	at vmfest.virtualbox.machine_config$attach_adapter.invoke(machine_config.clj:200)\
+	at vmfest.virtualbox.machine_config$configure_adapter.invoke(machine_config.clj:230)\
+	at vmfest.virtualbox.machine_config$configure_network.invoke(machine_config.clj:242)\
+	at vmfest.virtualbox.machine_config$configure_machine.invoke(machine_config.clj:262)\
+	at vmfest.manager$create_machine$fn__16428.invoke(manager.clj:380)\
+	at vmfest.manager$create_machine.doInvoke(manager.clj:372)\
+	at clojure.lang.RestFn.invoke(RestFn.java:533)\
+	at vmfest.manager$instance_STAR_.doInvoke(manager.clj:433)\
+	at clojure.lang.RestFn.invoke(RestFn.java:497)\
+	at pallet.compute.vmfest.service$create_node.invoke(service.clj:414)\
+	at pallet.compute.vmfest.service$parallel_create_nodes$iter__16842__16846$fn__16847$fn__16852.invoke(service.clj:555)\
+	at clojure.core$binding_conveyor_fn$fn__3989.invoke(core.clj:1819)\
+	at clojure.lang.AFn.call(AFn.java:18)\
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)\
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)\
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)\
+	at java.lang.Thread.run(Thread.java:744)\
+\
+\
+Hi Upal / Sona / Venki,\
+I would like to be relieved of my duties at Kratos as i have got a full-time opportunity at another start-up.\
+Thank you all for giving me the opportunity to be associated with the development of the new ad-serving platform at Kratos.\
+I wish all success to the team and product.\
+I will complete all the assigned work before i leave.\
+Request you to relieve me by next Monday. \
+regards\
+raghu\
+\
+\
+Jun 30, 2014 2:02:51 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.109 #> install: Enable service usergrid (runit.clj:219) : SUCCESS\
+Jun 30, 2014 2:02:51 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.109 22 install: \
+An error occured\
+(\{:server "192.168.56.108",\
+  :message\
+  "192.168.56.108 Error executing script :out #> install: Directory /opt/kafka : SUCCESS, #> install: remote-file $\{TMPDIR:-$\{TEMP:-$\{TMP:-$(if [ -d /tmp ]; then echo /tmp;else",\
+  :exit 1,\
+  :out\
+  "install: remote-directory...\\ninstall: Directory /opt/kafka...\\n#> install: Directory /opt/kafka : SUCCESS\\ninstall: remote-file $\{TMPDIR:-$\{TEMP:-$\{TMP:-$(if [ -d /tmp ]; then echo /tmp;else\\nif [ -d /var/tmp ]; then echo /var/tmp;else\\nif [ -d /use/tmp ]; then echo /usr/tmp;fi\\nfi\\nfi)\}\}\}/kafka_2.10-0.8.1.1.tgz...\\ncurl: (18) transfer closed with 7407971 bytes remaining to read\\n#> install: remote-file $\{TMPDIR:-$\{TEMP:-$\{TMP:-$(if [ -d /tmp ]; then echo /tmp;else\\nif [ -d /var/tmp ]; then echo /var/tmp;else\\nif [ -d /use/tmp ]; then echo /usr/tmp;fi\\nfi\\nfi)\}\}\}/kafka_2.10-0.8.1.1.tgz : FAIL\\n"\})\
+See logs for further details\
+Subprocess failed\
+\
+\
+INFO: 192.168.56.101 22 install: \
+An error occured\
+(\{:server "192.168.56.103",\
+  :message\
+  "192.168.56.103 Error executing script :out #> install: Directory /opt/zookeeper : SUCCESS, #> install: remote-file $\{TMPDIR:-$\{TEMP:-$\{TMP:-$(if [ -d /tmp ]; then echo /tmp;else",\
+  :exit 1,\
+  :out\
+  "install: remote-directory...\\ninstall: Directory /opt/zookeeper...\\n#> install: Directory /opt/zookeeper : SUCCESS\\ninstall: remote-file $\{TMPDIR:-$\{TEMP:-$\{TMP:-$(if [ -d /tmp ]; then echo /tmp;else\\nif [ -d /var/tmp ]; then echo /var/tmp;else\\nif [ -d /use/tmp ]; then echo /usr/tmp;fi\\nfi\\nfi)\}\}\}/zookeeper-3.4.5.tar.gz...\\ncurl: (18) transfer closed with 13017127 bytes remaining to read\\n#> install: remote-file $\{TMPDIR:-$\{TEMP:-$\{TMP:-$(if [ -d /tmp ]; then echo /tmp;else\\nif [ -d /var/tmp ]; then echo /var/tmp;else\\nif [ -d /use/tmp ]; then echo /usr/tmp;fi\\nfi\\nfi)\}\}\}/zookeeper-3.4.5.tar.gz : FAIL\\n"\}\
+ \{:server "192.168.56.102",\
+  :message\
+  "192.168.56.102 Error executing script :out #> install: Directory /opt/cassandra : SUCCESS, #> install: remote-file $\{TMPDIR:-$\{TEMP:-$\{TMP:-$(if [ -d /tmp ]; then echo /tmp;else",\
+  :exit 1,\
+  :out\
+  "install: remote-directory...\\ninstall: Directory /opt/cassandra...\\n#> install: Directory /opt/cassandra : SUCCESS\\ninstall: remote-file $\{TMPDIR:-$\{TEMP:-$\{TMP:-$(if [ -d /tmp ]; then echo /tmp;else\\nif [ -d /var/tmp ]; then echo /var/tmp;else\\nif [ -d /use/tmp ]; then echo /usr/tmp;fi\\nfi\\nfi)\}\}\}/apache-cassandra-2.0.6-bin.tar.gz...\\ncurl: (18) transfer closed with 15311779 bytes remaining to read\\n#> install: remote-file $\{TMPDIR:-$\{TEMP:-$\{TMP:-$(if [ -d /tmp ]; then echo /tmp;else\\nif [ -d /var/tmp ]; then echo /var/tmp;else\\nif [ -d /use/tmp ]; then echo /usr/tmp;fi\\nfi\\nfi)\}\}\}/apache-cassandra-2.0.6-bin.tar.gz : FAIL\\n"\})\
+See logs for further details\
+Subprocess failed\
+[Ra\
+\
+\
+Success at last\
+\
+INFO: 192.168.56.106 22 deploy: \
+Jun 30, 2014 10:01:22 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.105 #> deploy: deploy enrichment (enrichment.clj:50) : SUCCESS\
+Jun 30, 2014 10:01:22 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.105 22 deploy: \
+Jun 30, 2014 10:01:44 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.105 #> deploy: kill predict enrichment topology (enrichment.clj:55) : SUCCESS\
+Jun 30, 2014 10:01:44 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.105 22 deploy: \
+Jun 30, 2014 10:02:49 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.105 #> deploy: deploy storm-predict (enrichment.clj:57) : SUCCESS\
+===========================================================================================================================\
+:primary-ip    | :private-ip | :hostname           | :group-name       | :roles                                            \
+===========================================================================================================================\
+192.168.56.104 |             | local-web-0-0       | local-web-0       | #\{:local :local.web.vmfest :local.web\}            \
+192.168.56.106 |             | local-userflood-0-0 | local-userflood-0 | #\{:local :local.userflood :local.userflood.vmfest\}\
+192.168.56.105 |             | local-storm-0-0     | local-storm-0     | #\{:local.storm.vmfest :local :local.storm\}        \
+===========================================================================================================================\
+\
+\
+\
+INFO: 192.168.56.103 #> Link /usr/bin/sv as /etc/init.d/drpc : SUCCESS\
+Jun 30, 2014 3:13:05 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.103 22  remote-file /opt/storm/conf/storm.yaml :content "usergrid.server: 192.168.56.102..."\
+Jun 30, 2014 3:13:06 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.103 #> remote-file /opt/storm/conf/storm.yaml : SUCCESS\
+Jun 30, 2014 3:13:06 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.103 22  \
+Jun 30, 2014 3:13:07 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.103 #> restart drpc (runit.clj:245) : SUCCESS\
+Jun 30, 2014 3:13:07 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.103 22 install-lein: remote-file /usr/local/bin/lein :insecure true :url "https://raw.github.com/technomancy/leiningen/stable/bin/lein"\
+Jun 30, 2014 3:13:11 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.103 #> install-lein: remote-file /usr/local/bin/lein : SUCCESS\
+Jun 30, 2014 3:13:11 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.102 22 build: \
+Jun 30, 2014 3:13:11 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.101 22 build: \
+Jun 30, 2014 3:13:11 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.103 22 build: \
+Jun 30, 2014 3:13:12 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.102 #> build: stop usergrid (usergrid.clj:75) : SUCCESS\
+Jun 30, 2014 3:13:12 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.102 22 build:\
+\
+\
+Anonymous UUID:       2337AE90-8772-81F8-4BA7-41EE7D037280\
+\
+Mon Jun 30 15:18:41 2014\
+panic(cpu 0 caller 0xffffff801d8db94e): Kernel trap at 0xffffff801d8d586f, type 13=general protection, registers:\
+CR0: 0x000000008001003b, CR2: 0x00007fff3f7c8ff8, CR3: 0x000000001ff1f000, CR4: 0x00000000001626e0\
+RAX: 0x72656c6c6f72746e, RBX: 0x0000000000000000, RCX: 0x0000000076453431, RDX: 0xffffff80f02ced08\
+RSP: 0xffffff810fa1be80, RBP: 0xffffff810fa1beb0, RSI: 0x0000000000000032, RDI: 0xffffff80f02ced08\
+R8:  0xffffff801de8a380, R9:  0xffffff801decb540, R10: 0xffffff810fa1be20, R11: 0xffffff801de89ce8\
+R12: 0x0000000000000001, R13: 0x00004e529fa3b83c, R14: 0xffffff80f02ced08, R15: 0xffffff80f02ced08\
+RFL: 0x0000000000010202, RIP: 0xffffff801d8d586f, CS:  0x0000000000000008, SS:  0x0000000000000010\
+Fault CR2: 0x00007fff3f7c8ff8, Error code: 0x0000000000000000, Fault CPU: 0x0\
+\
+Backtrace (CPU 0), Frame : Return Address\
+0xffffff8100670c50 : 0xffffff801d822f69 \
+0xffffff8100670cd0 : 0xffffff801d8db94e \
+0xffffff8100670ea0 : 0xffffff801d8f2dc6 \
+0xffffff8100670ec0 : 0xffffff801d8d586f \
+0xffffff810fa1beb0 : 0xffffff801d8d0d65 \
+0xffffff810fa1bed0 : 0xffffff801db1103c \
+0xffffff810fa1bf20 : 0xffffff801d84a15a \
+0xffffff810fa1bfb0 : 0xffffff801d8d6b37 \
+\
+BSD process name corresponding to current thread: kernel_task\
+\
+Mac OS version:\
+13A3028\
+\
+Kernel version:\
+Darwin Kernel Version 13.0.2: Sun Sep 29 19:38:57 PDT 2013; root:xnu-2422.75.4~1/RELEASE_X86_64\
+Kernel UUID: C51C3998-66EA-3C1B-A46E-90943DA76DF4\
+Kernel slide:     0x000000001d600000\
+Kernel text base: 0xffffff801d800000\
+System model name: MacBookPro11,1 (Mac-189A3D4F975D5FFC)\
+\
+System uptime in nanoseconds: 86116772615624\
+last loaded kext at 84637359891765: com.apple.driver.AppleMikeyHIDDriver	124 (addr 0xffffff7f9f919000, size 20480)\
+last unloaded kext at 74686073850884: com.apple.driver.AppleMikeyHIDDriver	124 (addr 0xffffff7f9f8cd000, size 12288)\
+loaded kexts:\
+org.virtualbox.kext.VBoxNetAdp	4.3.12\
+org.virtualbox.kext.VBoxNetFlt	4.3.12\
+org.virtualbox.kext.VBoxUSB	4.3.12\
+org.virtualbox.kext.VBoxDrv	4.3.12\
+com.apple.driver.AppleMikeyHIDDriver	124\
+com.apple.filesystems.smbfs	2.0.0\
+com.apple.filesystems.autofs	3.0\
+com.apple.driver.AppleUpstreamUserClient	3.5.13\
+com.apple.iokit.IOBluetoothSerialManager	4.2.1f2\
+com.apple.driver.AudioAUUC	1.60\
+com.apple.driver.ApplePlatformEnabler	2.0.9d1\
+com.apple.driver.AGPM	100.14.14\
+com.apple.driver.X86PlatformShim	1.0.0\
+com.apple.driver.AppleHDA	2.5.8fc1\
+com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport	4.2.1f2\
+com.apple.driver.AppleThunderboltIP	1.0.10\
+com.apple.iokit.IOUserEthernet	1.0.0d1\
+com.apple.driver.AppleBacklight	170.3.5\
+com.apple.driver.AppleSMCLMU	2.0.4d1\
+com.apple.Dont_Steal_Mac_OS_X	7.0.0\
+com.apple.driver.AppleHWAccess	1\
+com.apple.driver.AppleLPC	1.7.0\
+com.apple.driver.AppleMCCSControl	1.1.12\
+com.apple.driver.AppleCameraInterface	4.20.0\
+com.apple.driver.AppleIntelHD5000Graphics	8.2.0\
+com.apple.driver.AppleIntelFramebufferAzul	8.2.0\
+com.apple.driver.AppleUSBTCButtons	240.2\
+com.apple.driver.AppleUSBTCKeyboard	240.2\
+com.apple.driver.AppleUSBCardReader	3.4.0\
+com.apple.AppleFSCompression.AppleFSCompressionTypeDataless	1.0.0d1\
+com.apple.AppleFSCompression.AppleFSCompressionTypeZlib	1.0.0d1\
+com.apple.BootCache	35\
+com.apple.driver.AppleUSBHub	660.4.0\
+com.apple.driver.XsanFilter	404\
+com.apple.iokit.IOAHCIBlockStorage	2.4.5\
+com.apple.driver.AppleAHCIPort	2.9.5\
+com.apple.driver.AirPort.Brcm4360	820.21.47\
+com.apple.driver.AppleUSBXHCI	660.4.2\
+com.apple.driver.AppleSmartBatteryManager	161.0.0\
+com.apple.driver.AppleACPIButtons	2.0\
+com.apple.driver.AppleRTC	2.0\
+com.apple.driver.AppleHPET	1.8\
+com.apple.driver.AppleSMBIOS	2.0\
+com.apple.driver.AppleACPIEC	2.0\
+com.apple.driver.AppleAPIC	1.7\
+com.apple.nke.applicationfirewall	153\
+com.apple.security.quarantine	3\
+com.apple.kext.triggers	1.0\
+com.apple.iokit.IOSerialFamily	10.0.7\
+com.apple.driver.DspFuncLib	2.5.8fc1\
+com.apple.vecLib.kext	1.0.0\
+com.apple.iokit.IOAudioFamily	1.9.4fc11\
+com.apple.kext.OSvKernDSPLib	1.14\
+com.apple.iokit.IOBluetoothHostControllerUSBTransport	4.2.1f2\
+com.apple.driver.AppleBacklightExpert	1.0.4\
+com.apple.driver.AppleHDAController	2.5.8fc1\
+com.apple.iokit.IOHDAFamily	2.5.8fc1\
+com.apple.iokit.IOBluetoothFamily	4.2.1f2\
+com.apple.driver.X86PlatformPlugin	1.0.0\
+com.apple.driver.AppleSMC	3.1.6d1\
+com.apple.driver.IOPlatformPluginFamily	5.7.0d1\
+com.apple.driver.AppleSMBusController	1.0.11d1\
+com.apple.iokit.IOSurface	91\
+com.apple.iokit.IONDRVSupport	2.4\
+com.apple.AppleGraphicsDeviceControl	3.4.28\
+com.apple.iokit.IOAcceleratorFamily2	98.9\
+com.apple.iokit.IOGraphicsFamily	2.4\
+com.apple.driver.AppleUSBMultitouch	240.9\
+com.apple.iokit.IOUSBHIDDriver	660.4.0\
+com.apple.driver.AppleThunderboltDPInAdapter	3.1.2\
+com.apple.driver.AppleThunderboltDPAdapterFamily	3.1.2\
+com.apple.driver.AppleThunderboltPCIDownAdapter	1.4.3\
+com.apple.iokit.IOSCSIBlockCommandsDevice	3.6.5\
+com.apple.iokit.IOUSBMassStorageClass	3.6.0\
+com.apple.iokit.IOSCSIArchitectureModelFamily	3.6.5\
+com.apple.driver.AppleUSBMergeNub	650.4.0\
+com.apple.driver.AppleUSBComposite	656.4.1\
+com.apple.iokit.IOUSBUserClient	660.4.2\
+com.apple.iokit.IOAHCIFamily	2.6.0\
+com.apple.driver.AppleThunderboltNHI	1.9.8\
+com.apple.iokit.IOThunderboltFamily	3.2.3\
+com.apple.iokit.IO80211Family	600.34\
+com.apple.driver.mDNSOffloadUserClient	1.0.1b4\
+com.apple.iokit.IONetworkingFamily	3.2\
+com.apple.iokit.IOUSBFamily	660.4.2\
+com.apple.driver.AppleEFINVRAM	2.0\
+com.apple.driver.AppleEFIRuntime	2.0\
+com.apple.iokit.IOHIDFamily	2.0.0\
+com.apple.iokit.IOSMBusFamily	1.1\
+com.apple.security.sandbox	278.10\
+com.apple.kext.AppleMatch	1.0.0d1\
+com.apple.security.TMSafetyNet	7\
+com.apple.driver.AppleKeyStore	2\
+com.apple.driver.DiskImages	371.1\
+com.apple.iokit.IOStorageFamily	1.9\
+com.apple.iokit.IOReportFamily	23\
+com.apple.driver.AppleFDEKeyStore	28.30\
+com.apple.driver.AppleACPIPlatform	2.0\
+com.apple.iokit.IOPCIFamily	2.8\
+com.apple.iokit.IOACPIFamily	1.4\
+com.apple.kec.pthread	1\
+com.apple.kec.corecrypto	1.0\
+Model: MacBookPro11,1, BootROM MBP111.0138.B03, 2 processors, Intel Core i5, 2.4 GHz, 8 GB, SMC 2.16f58\
+Graphics: Intel Iris, Intel Iris, Built-In, 1024 MB\
+Memory Module: BANK 0/DIMM0, 4 GB, DDR3, 1600 MHz, 0x80AD, 0x484D54343531533641465238412D50422020\
+Memory Module: BANK 1/DIMM0, 4 GB, DDR3, 1600 MHz, 0x80AD, 0x484D54343531533641465238412D50422020\
+AirPort: spairport_wireless_card_type_airport_extreme (0x14E4, 0x112), Broadcom BCM43xx 1.0 (6.30.223.154.47)\
+Bluetooth: Version 4.2.1f2 12982, 3 services, 23 devices, 1 incoming serial ports\
+Network Service: Wi-Fi, AirPort, en0\
+Serial ATA Device: APPLE SSD SD0256F, 251 GB\
+USB Device: Internal Memory Card Reader\
+USB Device: Apple Internal Keyboard / Trackpad\
+USB Device: BRCM20702 Hub\
+USB Device: Bluetooth USB Host Controller\
+Thunderbolt Bus: MacBook Pro, Apple Inc., 17.2\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\fs26 \cf21 \cb22 \CocoaLigature1 \
+Success at last:\
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\fs22 \cf0 \cb1 \CocoaLigature0 INFO: 192.168.56.106 22 deploy: \
+Jun 30, 2014 10:01:22 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.105 #> deploy: deploy enrichment (enrichment.clj:50) : SUCCESS\
+Jun 30, 2014 10:01:22 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.105 22 deploy: \
+Jun 30, 2014 10:01:44 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.105 #> deploy: kill predict enrichment topology (enrichment.clj:55) : SUCCESS\
+Jun 30, 2014 10:01:44 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.105 22 deploy: \
+Jun 30, 2014 10:02:49 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.105 #> deploy: deploy storm-predict (enrichment.clj:57) : SUCCESS\
+===========================================================================================================================\
+:primary-ip    | :private-ip | :hostname           | :group-name       | :roles                                            \
+===========================================================================================================================\
+192.168.56.104 |             | local-web-0-0       | local-web-0       | #\{:local :local.web.vmfest :local.web\}            \
+192.168.56.106 |             | local-userflood-0-0 | local-userflood-0 | #\{:local :local.userflood :local.userflood.vmfest\}\
+192.168.56.105 |             | local-storm-0-0     | local-storm-0     | #\{:local.storm.vmfest :local :local.storm\}        \
+===========================================================================================================================
+\fs26 \cf21 \cb22 \CocoaLigature1 \
+\pard\pardeftab720\sl380
+\cf21 \
+to break down the task\
+1. front end: \
+		html page to be modified  - userList.html\
+         tasks : controller to handle search, filter, query for ( administrators, marketers )and pagination\
+2. backend:\
+         Populate around 1000 users randomly choosing marketers and administrators\
+         Modify the backend accordingly\
+\
+Approach:\
+1. Get the backend ready and write queries\
+2. Wire the front end UI controller and views.\
+\
+Hi Sid,\
+I plan to do the directive in this way.\
+\
+<ng-usergrid filterOptions=\{data.filter\} sourceData=\{usergrid.object\} sortOrder=\'91asc/desc\'92 showCounts=\'91true/false\'92 pageSize=\'91numElements\'92/>\
+\
+Here-\
+sourceData : user, organisation, roles ( as defined in usergrid )\
+filterOptions : list of choices\
+\
+This will output the html snippet containing:\
+1. A combo box to show the filters from using filterOptions\
+2. Text field to search the usergrid for the specific object i.e users , organisation etc\
+3. Buttons to display the counts (  marketers, admins)\
+4. Pagination enabled\
+\
+Do we have to call any function in the parent scope?\
+\
+\
+\
+\pard\pardeftab720\sl340
+\cf45 \cb46 import\cf0 \cb46  pycurl, json\
+\
+github_url = \cf47 \cb46 'https://api.postmarkapp.com/email'\cf0 \cb46 \
+\
+data = json.dumps(\{\cf47 \cb46 "From"\cf0 \cb46 : \cf47 \cb46 "user@example.com"\cf0 \cb46 , \cf47 \cb46 "To"\cf0 \cb46 : \cf47 \cb46 "receiver@example.com"\cf0 \cb46 , \cf47 \cb46 "Subject"\cf0 \cb46 : \cf47 \cb46 "Pycurl"\cf0 \cb46 , \cf47 \cb46 "TextBody"\cf0 \cb46 : \cf47 \cb46 "Some text"\cf0 \cb46 \})\
+\
+c = pycurl.\cf48 \cb46 Curl\cf0 \cb46 ()\
+c.setopt(pycurl.URL, github_url)\
+c.setopt(pycurl.HTTPHEADER, [\cf47 \cb46 'X-Postmark-Server-Token: API_TOKEN_HERE'\cf0 \cb46 ,\cf47 \cb46 'Accept: application/json'\cf0 \cb46 ])\
+c.setopt(pycurl.POST, \cf47 \cb46 1\cf0 \cb46 )\
+c.setopt(pycurl.POSTFIELDS, data)\
+c.perform()\
+\pard\pardeftab720\sl380
+\cf21 \cb22 \
+\
+\pard\pardeftab720\sl340
+\cf0 \cb46 curl -X POST \cf47 \cb46 "http://api.postmarkapp.com/email"\cf0 \cb46  \\\
+\
+-H \cf47 \cb46 "Accept: application/json"\cf0 \cb46  \\\
+\
+-H \cf47 \cb46 "Content-Type: application/json"\cf0 \cb46  \\\
+\
+-H \cf47 \cb46 "X-Postmark-Server-Token: ed742D75-5a45-49b6-a0a1-5b9ec3dc9e5d"\cf0 \cb46  \\\
+\
+-v \\\
+\
+-d \cf47 \cb46 "\{From: 'sender@example.com', To: 'receiver@example.com', Subject: 'Postmark test', HtmlBody: '<html><body><strong>Hello</strong> dear Postmark user.</body></html>'\}"\cf0 \cb46 \
+\pard\pardeftab720\sl380
+\cf21 \cb22 \
+\pard\pardeftab720\sl380
+
+\fs24 \cf21 1. curl -X POST -d 'organization=myfirstorg&username=myadmin&name=Admin&email=admin@example.com&password=password' http://localhost:8080/management/organizations\
+\
+data = json.dumps(\{\'93organization\'94:\'94my2org\'94,\'94username\'94:\'94myadmin\'94,\'94name\'94:\'94Admin\'94,\'94email\'94:\'94admin@example.com\'94,\'94password\'94:\'94password\'92\})\
+urltoPost = http://localhost:8080/management/organizations\
+\pard\pardeftab720\sl340
+
+\fs26 \cf0 \cb46 c = pycurl.\cf48 \cb46 Curl\cf0 \cb46 ()\
+c.setopt(pycurl.URL, 
+\fs24 \cf21 \cb22 urltoPost
+\fs26 \cf0 \cb46 )\
+c.setopt(pycurl.HTTPHEADER, [\cf47 \cb46 'Accept: application/json'\cf0 \cb46 ])\
+c.setopt(pycurl.POST, \cf47 \cb46 1\cf0 \cb46 )\
+c.setopt(pycurl.POSTFIELDS, data)\
+c.perform()\
+\
+\pard\pardeftab720\sl360
+
+\f3 \cf21 \cb16 2. curl 'http://localhost:8080/management/token?grant_type=password&username=myadmin&password=password'\
+urlToGet 'http://localhost:8080/management/token?grant_type=password&username=myadmin&password=password'\
+\pard\pardeftab720\sl340
+
+\f2 \cf0 \cb46 c = pycurl.\cf48 \cb46 Curl\cf0 \cb46 ()\
+c.setopt(pycurl.URL, 
+\fs24 \cf21 \cb22 urltoGet
+\fs26 \cf0 \cb46 )\
+c.setopt(pycurl.HTTPHEADER, [\cf47 \cb46 'Accept: application/json'\cf0 \cb46 ])\
+c.setopt(pycurl.GET, \cf47 \cb46 1\cf0 \cb46 )\
+c.perform()\
+\
+3.
+\fs24 \cf21 \cb22 curl -H "Authorization: Bearer 
+\f3\fs20 \cf16 \cb0 \CocoaLigature0 YWMtNr7dvgEFEeSt8esM17r7mwAAAUcVYjR6WFbm5A7q4fg_k2PS1eA-YBcqACE
+\f2\fs24 \cf21 \cb22 \CocoaLigature1 " -H "Content-Type: application/json" -X POST -d '\{ "name":"myapp" \}' http://localhost:8080/management/orgs/myfirstorg/apps\
+\pard\pardeftab720\sl380
+\cf21 \
+data = \{ "name":"myapp" \}\
+urltoPost = http://localhost:8080/management/orgs/myfirstorg/apps\
+\pard\pardeftab720\sl340
+
+\fs26 \cf0 \cb46 c = pycurl.\cf48 \cb46 Curl\cf0 \cb46 ()\
+c.setopt(pycurl.URL, 
+\fs24 \cf21 \cb22 urltoPost
+\fs26 \cf0 \cb46 )\
+c.setopt(pycurl.HTTPHEADER, [\cf47 \cb46 '
+\fs24 \cf21 \cb22 Content-Type
+\fs26 \cf47 \cb46 : application/json\'92,\'92
+\fs24 \cf21 \cb22 Authorization: Bearer 
+\f3\fs20 \cf16 \cb0 \CocoaLigature0 YWMtNr7dvgEFEeSt8esM17r7mwAAAUcVYjR6WFbm5A7q4fg_k2PS1eA-YBcqACE\'92
+\f2\fs26 \cf0 \cb46 \CocoaLigature1 ])\
+c.setopt(pycurl.POST, \cf47 \cb46 1\cf0 \cb46 )\
+c.setopt(pycurl.POSTFIELDS, data)\
+c.perform()\cf21 \cb22 \
+\pard\pardeftab720\sl380
+\cf21 \
+\
+4. 
+\fs24 curl -H "Authorization: Bearer 
+\f3\fs20 \cf16 \cb0 \CocoaLigature0 YWMtNr7dvgEFEeSt8esM17r7mwAAAUcVYjR6WFbm5A7q4fg_k2PS1eA-YBcqACE
+\f2\fs24 \cf21 \cb22 \CocoaLigature1 " -X POST "http://localhost:8080/myfirstorg/myapp/users" -d '\{ "username":"myuser", "password":"mypassword", "email":"user@example.com" \}'\
+\
+data = \{ "username":"myuser", "password":"mypassword", "email":"user@example.com" \}\
+urltoPost = http://localhost:8080/myfirstorg/myapp/users\
+\pard\pardeftab720\sl340
+
+\fs26 \cf0 \cb46 c = pycurl.\cf48 \cb46 Curl\cf0 \cb46 ()\
+c.setopt(pycurl.URL, 
+\fs24 \cf21 \cb22 urltoPost
+\fs26 \cf0 \cb46 )\
+c.setopt(pycurl.HTTPHEADER, [\cf47 \cb46 '
+\fs24 \cf21 \cb22 Content-Type
+\fs26 \cf47 \cb46 : application/json\'92,\'92
+\fs24 \cf21 \cb22 Authorization: Bearer 
+\f3\fs20 \cf16 \cb0 \CocoaLigature0 YWMtNr7dvgEFEeSt8esM17r7mwAAAUcVYjR6WFbm5A7q4fg_k2PS1eA-YBcqACE\'92
+\f2\fs26 \cf0 \cb46 \CocoaLigature1 ])\
+c.setopt(pycurl.POST, \cf47 \cb46 1\cf0 \cb46 )\
+c.setopt(pycurl.POSTFIELDS, data)\
+c.perform()\
+\
+5. 
+\f3\fs20 \cf16 \cb0 \CocoaLigature0 curl 'http://localhost:8080/myfirstorg/myapp/token?grant_type=password&username=myuser&password=mypassword'
+\fs26 \cf21 \cb16 \CocoaLigature1 \
+\
+\pard\pardeftab720\sl360
+\cf21 urlToGet 
+\fs20 \cf16 \cb0 \CocoaLigature0 'http://localhost:8080/myfirstorg/myapp/token?grant_type=password&username=myuser&password=mypassword'
+\fs26 \cf21 \cb16 \CocoaLigature1 \
+\pard\pardeftab720\sl340
+
+\f2 \cf0 \cb46 c = pycurl.\cf48 \cb46 Curl\cf0 \cb46 ()\
+c.setopt(pycurl.URL, 
+\fs24 \cf21 \cb22 urltoGet
+\fs26 \cf0 \cb46 )\
+c.setopt(pycurl.HTTPHEADER, [\cf47 \cb46 'Accept: application/json'\cf0 \cb46 ])\
+c.setopt(pycurl.GET, \cf47 \cb46 1\cf0 \cb46 )\
+c.perform()\
+\
+6. 
+\fs24 \cf21 \cb22 curl -H "Authorization: Bearer 
+\f3\fs20 \cf16 \cb0 \CocoaLigature0 YWMthIgySAEFEeS43CODqXhWrAAAAUcVZDJCbLnBvprwXtsg1bYxq0v-Ah_3M9Y
+\f2\fs24 \cf21 \cb22 \CocoaLigature1 " -X POST -d '[ \{ "cat":"fluffy" \}, \{ "fish": \{ "gold":2, "oscar":1 \} \} ]' http://localhost:8080/myfirstorg/myapp/pets\
+
+\fs26 \cf0 \cb46 \
+\pard\pardeftab720\sl380
+
+\fs24 \cf21 \cb22 data = [ \{ "cat":"fluffy" \}, \{ "fish": \{ "gold":2, "oscar":1 \} \} ]\
+urltoPost =http://localhost:8080/myfirstorg/myapp/pets\
+\pard\pardeftab720\sl340
+
+\fs26 \cf0 \cb46 c = pycurl.\cf48 \cb46 Curl\cf0 \cb46 ()\
+c.setopt(pycurl.URL, 
+\fs24 \cf21 \cb22 urltoPost
+\fs26 \cf0 \cb46 )\
+c.setopt(pycurl.HTTPHEADER, [\cf47 \cb46 '
+\fs24 \cf21 \cb22 Content-Type
+\fs26 \cf47 \cb46 : application/json\'92,\'92
+\fs24 \cf21 \cb22 Authorization: Bearer 
+\f3\fs20 \cf16 \cb0 \CocoaLigature0 YWMthIgySAEFEeS43CODqXhWrAAAAUcVZDJCbLnBvprwXtsg1bYxq0v-Ah_3M9Y\'92
+\f2\fs26 \cf0 \cb46 \CocoaLigature1 ])\
+c.setopt(pycurl.POST, \cf47 \cb46 1\cf0 \cb46 )\
+c.setopt(pycurl.POSTFIELDS, data)\
+c.perform()\
+\
+7. 
+\fs24 \cf21 \cb22 curl -H "Authorization: Bearer 
+\f3\fs20 \cf16 \cb0 \CocoaLigature0 YWMtNr7dvgEFEeSt8esM17r7mwAAAUcVYjR6WFbm5A7q4fg_k2PS1eA-YBcqACE
+\f2\fs24 \cf21 \cb22 \CocoaLigature1 " -X GET "http://localhost:8080/myfirstorg/myapp/users"
+\fs26 \cf0 \cb46 \
+\pard\pardeftab720\sl340
+
+\f3 \cf21 \cb16 \
+\pard\pardeftab720\sl360
+\cf21 urlToGet 
+\fs20 \cf16 \cb0 \CocoaLigature0 '
+\f2\fs24 \cf21 \cb22 \CocoaLigature1 http://localhost:8080/myfirstorg/myapp/users
+\f3\fs20 \cf16 \cb0 \CocoaLigature0 '
+\fs26 \cf21 \cb16 \CocoaLigature1 \
+\pard\pardeftab720\sl340
+
+\f2 \cf0 \cb46 c = pycurl.\cf48 \cb46 Curl\cf0 \cb46 ()\
+c.setopt(pycurl.URL, 
+\fs24 \cf21 \cb22 urltoGet
+\fs26 \cf0 \cb46 )\
+c.setopt(pycurl.HTTPHEADER, [\cf47 \cb46 'Accept: application/json'\cf0 \cb46 ])\
+c.setopt(pycurl.GET, \cf47 \cb46 1\cf0 \cb46 )\
+c.perform()
+\f3 \cf21 \cb16 \
+\pard\pardeftab720\sl340
+
+\f2 \cf21 \cb22 \
+\pard\pardeftab720\sl380
+
+\fs24 \cf21 curl -X POST -d 'organization=raghuorg&username=raghu&name=Admin&email=raghu.sk@gmail.com&password=Rnandan273\'92 http://localhost:8080/management/organizations\
+\pard\pardeftab720\sl360
+
+\f3\fs26 \cf21 \cb16 curl 'http://192.168.56.106:8080/management/token?grant_type=password&username=raghu.sk@gmail.com&password=
+\f2\fs24 \cb22 Raghu1994
+\f3\fs26 \cb16 '
+\f2 \cb22 \
+\pard\pardeftab720\sl340
+\cf21 Steps:\
+\pard\pardeftab720\sl340
+{\field{\*\fldinst{HYPERLINK "https://github.com/projecteightytwo/aws/blob/master/README.md"}}{\fldrslt \cf21 https://github.com/projecteightytwo/aws/blob/master/README.md}}\
+\
+\pard\pardeftab720
+
+\f8 \cf4 \cb1 1. Go to {\field{\*\fldinst{HYPERLINK "http://192.168.56.106:8080/status"}}{\fldrslt \cf49 \ul \ulc49 192.168.56.106:8080/status}} and see if you see cassandraAvailable=true. If true, go directly to 5. Otherwise go to 2.\
+\
+2. If false, then open a terminal and run\
+\'a0 \'a0 \'a0 \'a0 ssh 192.168.56.106\
+\'a0 \'a0 \'a0 \'a0 sudo su root\
+\'a0 \'a0 \'a0 \'a0 sudo sv stop cassandra\
+\'a0 \'a0 \'a0 \'a0 sudo rm -rf /var/lib/cassandra/data\
+\'a0 \'a0 \'a0 \'a0 sudo sv start cassandra\
+\'a0 \'a0 \'a0 \'a0 sudo sv restart usergrid\
+\
+3. Go to soothsayer_cluster directory and run\
+\'a0 \'a0 \'a0 \'a0 lein pallet up --roles local --phases deploy\
+\
+4. If you see a Collector fail error then do 3 again. It should be fine a second time.\
+\
+5. Go to {\field{\*\fldinst{HYPERLINK "http://192.168.56.104:3000/"}}{\fldrslt \cf49 \ul \ulc49 192.168.56.104:3000}} and use the form on the right to Self Register and Login. You should be in our Admin Console.\
+\
+\
+<link rel="stylesheet" href="bower_components/ng-table/ng-table.css" />\
+    <script src="bower_components/ng-table/ng-table.js"></script>\
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>\
+\pard\pardeftab720\sl340
+
+\f2 \cf21 \cb22 \
+\
+getSubResource() method\
+\
+\
+With reference to documentation at  {\field{\*\fldinst{HYPERLINK "https://github.com/usergrid/usergrid/tree/master/stack/services"}}{\fldrslt https://github.com/usergrid/usergrid/tree/master/stack/services}} and \
+the definition of the UserInfo at\
+\pard\pardeftab720\sl340
+{\field{\*\fldinst{HYPERLINK "https://github.com/usergrid/usergrid/blob/master/stack/services/src/main/java/org/apache/usergrid/management/UserInfo.java"}}{\fldrslt \cf21 https://github.com/usergrid/usergrid/blob/master/stack/services/src/main/java/org/apache/usergrid/management/UserInfo.java}}\
+the custom properties are saved as 
+\fs24 \cb1 Map
+\f9\b <
+\f2\b0 String
+\f9\b ,
+\f2\b0  Object
+\f9\b >
+\f2\b0  properties. \
+\pard\pardeftab720\sl340
+
+\fs26 \cf21 \cb22 \
+\
+I am trying to relate how the query layer and the following are being handled.\
+Following URLs that can provide some information on how this can done.\
+\pard\pardeftab720\sl340
+{\field{\*\fldinst{HYPERLINK "https://github.com/usergrid/usergrid/tree/master/stack/query-validator/src"}}{\fldrslt \cf21 https://github.com/usergrid/usergrid/tree/master/stack/query-validator/src}}\
+\pard\pardeftab720\sl340
+{\field{\*\fldinst{HYPERLINK "https://github.com/usergrid/usergrid/blob/master/stack/services/src/main/java/org/apache/usergrid/services/AbstractCollectionService.java"}}{\fldrslt \cf21 https://github.com/usergrid/usergrid/blob/master/stack/services/src/main/java/org/apache/usergrid/services/AbstractCollectionService.java}}\
+\pard\pardeftab720\sl340
+{\field{\*\fldinst{HYPERLINK "https://github.com/usergrid/usergrid/blob/master/stack/query-validator/src/main/java/org/apache/usergrid/query/validator/ApiServerRunner.java"}}{\fldrslt \cf21 https://github.com/usergrid/usergrid/blob/master/stack/query-validator/src/main/java/org/apache/usergrid/query/validator/ApiServerRunner.java}}\
+\pard\pardeftab720\sl340
+{\field{\*\fldinst{HYPERLINK "https://github.com/usergrid/usergrid/blob/master/stack/core/src/main/java/org/apache/usergrid/persistence/Schema.java"}}{\fldrslt \cf21 https://github.com/usergrid/usergrid/blob/master/stack/core/src/main/java/org/apache/usergrid/persistence/Schema.java}}\
+{\field{\*\fldinst{HYPERLINK "https://github.com/usergrid/usergrid/blob/master/stack/rest/src/main/java/org/apache/usergrid/rest/management/users/UsersResource.java"}}{\fldrslt https://github.com/usergrid/usergrid/blob/master/stack/rest/src/main/java/org/apache/usergrid/rest/management/users/UsersResource.java}}\
+\
+I am yet to come to a conclusion on this item.\
+\
+Hi Prayag,\
+I am doing some modifications to the angular code on the client.\
+\
+The changes that i do in directory : 
+\fs22 \cf0 \cb1 \CocoaLigature0 soothsayer-cluster/vboxshared/console/src/client\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 \
+are not getting reflected in : soothsayer-cluster/vboxshared/console/scripts
+\fs26 \cf21 \cb22 \CocoaLigature1 \
+\pard\pardeftab720\sl340
+\cf21 \
+I am running the following command : 
+\fs22 \cf0 \cb1 \CocoaLigature0 lein pallet up --roles local --phases deploy\
+\
+Am i missing any deployment steps here.\
+thanks\
+raghu\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\fs26 \cf21 \cb22 \CocoaLigature1 \
+\pard\pardeftab720
+
+\f0\fs24 \cf0 \cb1 cd vboxshared/console\
+\'a0 \'a02) 
+\b grunt build
+\b0  in local\
+\'a0 \'a03) 
+\b lein pallet up --roles local.web --phases deploy
+\b0 \'a0\
+\'a0 \'a0 \'a0 \'a0OR\'a0\
+
+\b \'a0 \'a0 \'a0 node app.js
+\b0  in local machine to avoid dev-ops script\
+\'a0 \'a04) connect to web server running console server\
+\
+Hi Sid, Prayag,\
+I have a different set of issues now. \
+\
+During the first deployment the build script had output the following\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f2\fs22 \cf0 \CocoaLigature0 192.168.56.104 |             | local-web-0-0       | local-web-0       | #\{:local :local.web.vmfest :local.web\}            \
+192.168.56.106 |             | local-userflood-0-0 | local-userflood-0 | #\{:local :local.userflood :local.userflood.vmfest\}\
+192.168.56.105 |             | local-storm-0-0     | local-storm-0     | #\{:local.storm.vmfest :local :local.storm\} \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs24 \cf0 \CocoaLigature1 \
+Right now i see these are responding to ping messages\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f2\fs22 \cf0 \CocoaLigature0 192.168.56.106 and \
+192.168.56.105\
+\
+However 192.168.56.104 is not responding but there is a new instance 192.168.56.101 which i am able to ping, but there are no ports 3000 or 8086 open there.\
+Is this because of the the build that i aborted yesterday.\
+\
+Should i run the entire process i,e build and deploy again?\
+\
+\
+\
+Using the apache user grid\
+\
+\
+thanks\
+raghu\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f7\fs24 \cf50 \cb0 cd /Users/raghu/work/projects/sid/dev-ops/deploy/soothsayer-cluster/\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f2\fs22 \cf0 \cb1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f7\fs24 \cf50 \cb0 ./soothsayer.sh up dev
+\f2\fs22 \cf0 \cb1 \
+\
+
+\f7\fs24 \cf50 \cb0 FO: 192.168.56.102 #> install: Link /usr/bin/sv as /etc/init.d/site : SUCCESS\
+Jul 15, 2014 1:32:15 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.102 22 install: \
+Jul 15, 2014 1:32:15 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.102 #> install: Enable service site (runit.clj:219) : SUCCESS\
+Jul 15, 2014 1:32:15 PM clojure.tools.logging$eval378$fn__379 invoke\
+INFO: 192.168.56.102 22 install: \
+An error occured\
+(\{:server "192.168.56.104",\
+  :message\
+  "192.168.56.104 Error executing script :out #> install: Directory /opt/kafka : SUCCESS, #> install: remote-file $\{TMPDIR:-$\{TEMP:-$\{TMP:-$(if [ -d /tmp ]; then echo /tmp;else",\
+  :exit 1,\
+  :out\
+  "install: remote-directory...\\ninstall: Directory /opt/kafka...\\n#> install: Directory /opt/kafka : SUCCESS\\ninstall: remote-file $\{TMPDIR:-$\{TEMP:-$\{TMP:-$(if [ -d /tmp ]; then echo /tmp;else\\nif [ -d /var/tmp ]; then echo /var/tmp;else\\nif [ -d /use/tmp ]; then echo /usr/tmp;fi\\nfi\\nfi)\}\}\}/kafka_2.10-0.8.1.1.tgz...\\ncurl: (18) transfer closed with 7937951 bytes remaining to read\\n#> install: remote-file $\{TMPDIR:-$\{TEMP:-$\{TMP:-$(if [ -d /tmp ]; then echo /tmp;else\\nif [ -d /var/tmp ]; then echo /var/tmp;else\\nif [ -d /use/tmp ]; then echo /usr/tmp;fi\\nfi\\nfi)\}\}\}/kafka_2.10-0.8.1.1.tgz : FAIL\\n"\}\
+ \{:server "192.168.56.101",\
+  :message\
+  "192.168.56.101 Error executing script :out #> install: Directory /opt/maven : SUCCESS, #> install: remote-file $\{TMPDIR:-$\{TEMP:-$\{TMP:-$(if [ -d /tmp ]; then echo /tmp;else",\
+  :exit 1,\
+  :out\
+  "install: remote-directory...\\ninstall: Directory /opt/maven...\\n#> install: Directory /opt/maven : SUCCESS\\ninstall: remote-file $\{TMPDIR:-$\{TEMP:-$\{TMP:-$(if [ -d /tmp ]; then echo /tmp;else\\nif [ -d /var/tmp ]; then echo /var/tmp;else\\nif [ -d /use/tmp ]; then echo /usr/tmp;fi\\nfi\\nfi)\}\}\}/apache-maven-3.0.5-bin.tar.gz...\\ncurl: (18) transfer closed with 3354552 bytes remaining to read\\n#> install: remote-file $\{TMPDIR:-$\{TEMP:-$\{TMP:-$(if [ -d /tmp ]; then echo /tmp;else\\nif [ -d /var/tmp ]; then echo /var/tmp;else\\nif [ -d /use/tmp ]; then echo /usr/tmp;fi\\nfi\\nfi)\}\}\}/apache-maven-3.0.5-bin.tar.gz : FAIL\\n"\})\
+See logs for further details\
+Subprocess failed\
+[Raghunandans-MacBook-Pro:dev-ops/deploy/soothsayer-cluster] raghu%\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0 \cf0 \cb1 \CocoaLigature1 \
+}

@@ -1,0 +1,145 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red34\green79\blue188;\red234\green234\blue234;\red236\green236\blue236;
+\red83\green85\blue2;\red16\green121\blue2;\red117\green117\blue117;\red62\green0\blue63;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww20580\viewh10980\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs22 \cf1 \cb2 \CocoaLigature0 port install gearmand || \{ sed -i -e 's/tr1\\///' /opt/local/var/macports/build/_opt_local_var_macports_sources_rsync.macports.org_release_tarballs_ports_sysutils_gearmand/gearmand/work/gearmand-0.41/libgearman-1.0/gearman.h;\
+ port install gearmand;\}\
+\
+\
+\
+\pard\pardeftab720\sl340
+
+\fs26 \cf0 \cb3 \CocoaLigature1 sudo rm /usr/local/mysql;sudo rm -rf /usr/local/mysql*;sudo rm -rf /Library/StartupItems/MySQLCOM;sudo rm -rf /Library/PreferencePanes/MySQL*;rm -rf ~/Library/PreferencePanes/MySQL*;sudo rm -rf /Library/Receipts/mysql*;sudo rm -rf /Library/Receipts/MySQL*\
+\
+From raw event logs process events\
+\
+add to ES\
+\{\
+ event: type\
+ userid: uid\
+ user_session: u_num\
+ customer_session: g_num\
+ event_details: \{event_details\}\
+\}\
+\
+u_num = getUserSessionNum(currentTime, userId) \
+g_num = getGlobalSessionNum()\
+\
+At query time\
+query_unum = getUserSessionForTime(queryTime)\
+\
+ES query based on (userid, query_num )\
+\
+Start time : 1405074124.64\
+\
+\pard\pardeftab720\sl320
+
+\fs22 \cf0 \cb4 $ curl \cf5 -\cf0 XGET \cf6 'http://localhost:9200/test/userevents/_search'\cf0  \cf5 -\cf0 d \cf6 '\{\cf0   \cf6 \'91eventUri\'92:\'92page_view_http://www.oneillclothing.com/"\cf0  \cf5 \}\cf0   \cf5 \}\cf7 \
+\pard\pardeftab720\sl340
+
+\fs26 \cf0 \cb3 \
+\pard\pardeftab720\sl320
+
+\fs22 \cf0 \cb4 curl \cf5 -\cf0 XGET \cf6 'http://localhost:9200/test/userevents/_search?q= eventUri:page_view_http://www.oneillclothing.com/'\cf7 \
+\pard\pardeftab720\sl340
+
+\fs26 \cf0 \cb3 \
+\
+http://192.168.56.106:8080/sysorg/systemapp/users?accessToken=YWMtJgjfGgaqEeSbJFUp-KDcOwAAAUc6X7qsayGQfQEdEDMcSkk2qUeuGlHBOQw&ql=select * where status=\'91active\'92\
+\
+var params=\{\}\
+params[\'93method\'94]=\'91GET\'92;\
+params[\'93url\'94]=resource;\
+params[\'93headers\'94]=token;\
+$http(\{method: 'GET', url: 'www.google.com/someapi', headers: \{'Authorization': 'Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ=='\}\})\
+\
+\
+Here is a brief description about myself.\
+I am background in product development mainly with java technologies ( though i started my career as a C/C++ programmer ) \
+I was working for around 7 years in Tumri Inc ( a dynamic display ad platform ) where i was involved in different parts of the development of the  platform including portals ( using GWT, flex, YUI ) , Tumri specific Adobe CS3 plugins and ad server.\
+Have also developed a admin portal using angularjs at a mobile ad startup recently.\
+\pard\pardeftab720
+
+\f1 \cf8 \cb1  
+\b lein pallet up --roles local.web --phases build\
+
+\b0  
+\b lein pallet up --roles local.web --phases deploy\
+\
+\
+\
+Hi Soma,\
+These are some of my notes. Broadly we will have the following.\
+\
+ng-blox -\
+  - ng-blox-payment-gateway\
+  - ng-blox-account-handler\
+  - ng-blox-account-service-1\
+\
+\
+ng-blox:\
+      - Consumes a configuration where\
+               config includes: layout, workflow, components.\
+      - This component is the container for the above components.\
+      - Invoked via the html tag\
+\
+ng-blox-payment-gateway\
+     - service specific component\
+     - consumes a config that includes the backend services, ui.\
+     - event to publish\
+\
+This will be used in the following way by the end user.\
+\
+<html>\
+<head></head>\
+<body>\
+     <ng-blox service-config=\'93http://moonraft.com/service-config/icici\'94 layout-config=\'93http://moonraft.com/layout-config/icici\'94 component-config=\'93http://moonraft.com/component-config/icici\'94/>\
+</body>\
+<html>\
+\
+service-config :\
+	The backend service layer api configuration for the template\
+\
+layout-config:\
+          The layout related config for the template\
+\
+component-config :\
+	This will encapsulate all the component configurations, which include for each config the service end point, feature details.\
+\
+\
+For each of the above components i.e payment gateway, account lookup etc the component config will have the complete config information.\
+\
+\
+Tools:\
+1. WSIWYG editor to configure the angularjs directives. This could be a generic tool that can handle any angularjs component.\
+\
+2. Service layer definitions:\
+        REST API layer definitions\
+\
+3. Component library development\
+\
+4. Portal :\
+	To manage the creation , edit, publish of the template definitions\
+          This will use the WSIWYG editor to define the components\
+	To manage the deployment of the templates and components.\
+\
+The above broadly define the high level features and these can be developed independently of each other.\
+\
+thanks\
+raghu\
+\
+I am testing this\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

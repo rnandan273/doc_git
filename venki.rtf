@@ -1,0 +1,859 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fmodern\fcharset0 Courier;\f2\fnil\fcharset0 Monaco;
+\f3\froman\fcharset0 Times-Roman;\f4\fnil\fcharset0 AndaleMono;\f5\fmodern\fcharset0 CourierNewPS-BoldMT;
+\f6\fmodern\fcharset0 CourierNewPSMT;\f7\fnil\fcharset0 Georgia;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue120;\red234\green234\blue234;\red107\green0\blue1;
+\red42\green0\blue255;\red38\green38\blue38;\red246\green246\blue246;\red14\green110\blue109;\red63\green127\blue95;
+\red127\green0\blue85;\red26\green26\blue26;\red242\green244\blue245;\red67\green67\blue67;\red34\green79\blue188;
+\red83\green83\blue83;\red83\green85\blue2;\red16\green121\blue2;\red0\green0\blue117;\red115\green0\blue2;
+\red11\green84\blue83;\red250\green250\blue250;\red240\green242\blue245;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww20460\viewh11420\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs22 \cf0 \CocoaLigature0 78:31:c1:bf:1e:46 - Mac address\
+my citibank account number 5016318808\
+raghunath@56060.in\
+\
+\pard\pardeftab720
+
+\f1\fs24 \cf0 \CocoaLigature1 timestamp = datetime.datetime.fromtimestamp(time.time()).strftime('%Y%m%d %H:%M:%S')\
+headers = \{'DecibelAppID': '<Your Application ID>',\
+           'DecibelAppKey': '<Your Application Key>',\
+           'DecibelTimestamp': timestamp\}\
+\
+# Send the GET request\
+url = 'http://api.decibel.net/v1/Albums/?artist=miles%20davis&format=json'      \
+req = urllib2.Request(url, None, headers)\
+\
+# Read the response\
+resp = urllib2.urlopen(req).read()\
+\
+\pard\pardeftab720
+
+\f0\fs28 \cf2 \cb3 import\cf0  requests\
+\
+response = requests.get(\cf4 'http://thedataishere.com'\cf0 ,\
+                         auth=(\cf4 'user'\cf0 , \cf4 'password'\cf0 ))\
+data = response.json()\
+\
+userAgent\
+manufacturer\
+device\
+model\
+height\
+width\
+browser\
+OS name\
+\
+usergent\
+\pard\pardeftab720
+
+\f2\fs22 \cf5 \cb1 HardwareVendor\
+\pard\pardeftab720
+
+\f3\fs24 \cf0 HardwareFamily
+\f2\fs22 \cf5 \
+PlatformVendor\
+ScreenPixelsHeight\
+ScreenPixelsWidth\
+BrowserName\
+PlatformName
+\f0\fs28 \cf0 \cb3 \
+\
+\
+touchscreen\
+cookieSupport\
+osandroid\
+osOsx\
+os\
+\pard\pardeftab720
+
+\f1\fs24 \cf0 \cb1 \
+d5fc551dd2f125532edeccac8ced835f2b9c41a5\
+\
+To implement \'93Search Campaigns \'93\
+\
+\
+On Dashboard login show advertiser id / name\
+On Ads page show the current campaign\
+Date formats to adhere to for updates\
+Mar 19, 2014 3:54:33 PM\
+19 Mar, 2014 3:54:33 PM\
+2014-03-19T10:24:33Z\
+\
+Amazon, root53 DNS management\
+\
+\
+\pard\pardeftab720\sl380
+
+\fs26 \cf6 \cb7 \{"campaigns":[\{"advertiserId":1,"start":"Jan 21, \cf8 2014\cf6  9:45:08 AM","end":"Mar 28, \cf8 2014\cf6  10:25:29 AM","budget":60000.0,"actualCost":33000.0,"bidType":"CPA","state":"ACTIVE","approvalState":"APPROVED","id":1,"name":"Hitout Heroes","description":"Some \cf8 hero\cf6 \
+stuff"\},\{"advertiserId":1,"start":"Jan 21, \cf8 2014\cf6  9:45:08 AM","end":"Mar 17, \cf8 2014\cf6  10:25:29 AM","budget":60000.0,"actualCost":33000.0,"bidType":"CPA","state":"ACTIVE","approvalState":"APPROVED","id":2,"name":"Priyanka Chopra","description":"Priyanka \cf8 Chopra\cf6 \
+\cf8 shooting\cf6  vedio"\}]\}\
+\{"campaigns":[\{"advertiserId":2,"start":"Jan 21, \cf8 2014\cf6  9:45:08 AM","end":"Mar 17, \cf8 2014\cf6  10:25:29 AM","budget":60000.0,"actualCost":33000.0,"bidType":"CPA","state":"ACTIVE","approvalState":"APPROVED","id":3,"name":"Wheresmywater","description":"Wheresmywater\
+games"\}]\}\
+\
+\pard\pardeftab720
+
+\f2\fs22 \cf0 \cb1 			\cf9 /*\cf0 \
+\pard\pardeftab720
+\cf9 			byte[] bytes = IOUtils.toByteArray(is);\cf0 \
+\cf9 			if(bytes != null)\{\cf0 \
+\cf9 				//provider = new Provider(StreamFactory.create(bytes));\cf0 \
+\cf9 				provider = new Provider(StreamFactory.create(tempFile));\cf0 \
+\cf9 			\}\cf0 \
+\cf9 			else\{\cf0 \
+\cf9 				log.fatal("51 Degrees database not initialized");\cf0 \
+\cf9 				throw new RequestProcessorException();\cf0 \
+\cf9 			\}\cf0 \
+\cf9 			*/
+\f4\fs26 \cf6 \cb7 \
+\pard\pardeftab720
+
+\f2\fs22 \cf0 \cb1 	\cf10 private\cf0  String \ul createTempFile(InputStream inputStream)\ulnone  \{		\
+		OutputStream outputStream = \cf10 null\cf0 ;\
+		File tmpFile = \cf10 null\cf0 ;\
+		\cf10 try\cf0  \{\
+			tmpFile = File.createTempFile(\cf5 "file"\cf0 , \cf5 "temp"\cf0 );\
+			outputStream = \cf10 new\cf0  FileOutputStream(tmpFile);\
+	 \
+			\cf10 int\cf0  read = 0;\
+			\cf10 byte\cf0 [] bytes = \cf10 new\cf0  \cf10 byte\cf0 [2048];\
+	 \
+			\cf10 while\cf0  ((read = inputStream.read(bytes)) != -1) \{\
+				outputStream.write(bytes, 0, read);\
+			\}\
+	 \
+		\} \cf10 catch\cf0  (IOException e) \{\
+			e.printStackTrace();\
+		\} \cf10 finally\cf0  \{\
+			\cf10 if\cf0  (inputStream != \cf10 null\cf0 ) \{\
+				\cf10 try\cf0  \{\
+					inputStream.close();\
+				\} \cf10 catch\cf0  (IOException e) \{\
+					e.printStackTrace();\
+				\}\
+			\}\
+			\cf10 if\cf0  (outputStream != \cf10 null\cf0 ) \{\
+				\cf10 try\cf0  \{\
+					outputStream.close();\
+				\} \cf10 catch\cf0  (IOException e) \{\
+					e.printStackTrace();\
+				\}\
+	 \
+			\}\
+		\}\
+		\cf10 return\cf0  tmpFile.getAbsolutePath();\
+	\}\
+\
+rtc screens:\
+publisher \
+site\
+publisher performance \
+Browser\
+OS\
+Sum(impressions)\
+Sum(clicks)\
+Sum(downloads)\
+Hourly updated every 10 seconds\
+///\
+\
+adv name\
+ad name\
+browser\
+os\
+manufacturer\
+carrier\
+device\
+click count\
+impr count\
+\
+\
+1600\
+\
+<th>Advertiser Name</th>\
+                        <th>Ad Name</th>\
+                        <th>Browser</th>\
+                        <th>OS</th>\
+                        <th>Manufacturer</th>\
+                        <th>Carrier</th>\
+                        <th>Device</th>\
+                        <th>Click count</th>\
+                        <th>Impr count</th>\
+\
+ <td>\{\{detail.advname\}\}</td>\
+                        <td>\{\{detail.adname\}\}</td>\
+                        <td>\{\{detail.browser\}\}</td>\
+                        <td>\{\{detail.os\}\}</td>\
+                        <td>\{\{detail.manufacturer\}\}</td>\
+                        <td>\{\{detail.carrier\}\}</td>\
+                        <td>\{\{detail.device\}\}</td>\
+                        <td>\{\{detail.clickcount\}\}</td>\
+                        <td>\{\{detail.imprcount\}\}</td>\
+\
+\
+\{\
+        "header":\
+         	"names":\{"Advertiser Name","Ad Name", "Browser", "OS", "Manufacturer", "Carrier", "Device", "Click Count", "Impression Count"\}\
+        \},\
+        "data":[\{\
+	 	"values" :[\{"Advertiser1", "testAd ", "safari ", "iOS", "Apple ", "airtel ", "iPhone5 ", "1234","100"\},\
+	 	             \{"Advertiser2", "testAd2 ", "firefox ", "android", "Samsung", "vodafone", "Galaxy4", "124","10"\}\
+				]\
+\}\
+\
+        "header":\
+         	"names":\{"name":"Advertiser Name"\}\
+        \},\
+        "data":\{\
+	 	"values" :\{"value":"Advertiser1"\}\
+	 	       \}\
+\
+                <tbody>\
+                    <tr ng-repeat="data in reportdetails.data">\
+                        <td ng-repeat="value in data.values">\{\{data.value\}\}</td>\
+\
+                    </tr>\
+                </tbody>\
+\
+\'85\'85..impressions device\
+\pard\pardeftab720\sl480
+
+\f1\fs28 \cf11 \cb12 \
+Memcache installation and running\
+\pard\pardeftab720
+
+\fs24 \cf13 \cb3 sudo\'a0port\'a0install\'a0memcached  installation via macports
+\fs28 \cf11 \cb12 \
+
+\fs24 \cf13 \cb3 memcached\'a0-vv\
+memcached\'a0-d as daemon\
+\
+Kafka notes:\
+\pard\pardeftab720
+
+\f5\b\fs34 \cf6 \cb1 Start zookeeper:\
+bin/zookeeper-server-start.sh config/zookeeper.properties
+\f6\b0 \
+
+\f5\b \
+Start Kafka server:\
+bin/kafka-server-start.sh config/server.properties
+\f6\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs22 \cf1 \cb14 \CocoaLigature0 /Users/raghu/work/software/kafka/kafka_2.9.2-0.8.1/
+\f5\b\fs34 \cf6 \cb1 \CocoaLigature1 bin/kafka-server-start.sh config/server.properties\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f6\b0 \cf6 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs22 \cf1 \cb14 \CocoaLigature0 /Users/raghu/work/software/kafka/kafka_2.9.2-0.8.1/
+\f5\b\fs34 \cf6 \cb1 \CocoaLigature1 bin/zookeeper-server-start.sh config/zookeeper.properties
+\f1\b0\fs24 \cf13 \cb3 \
+\pard\pardeftab720
+\cf13 \
+\pard\pardeftab720\sl480
+
+\fs28 \cf11 \cb12 \
+\pard\pardeftab720
+
+\f4\fs26 \cf6 \cb7 campaign_services.js\
+rest_services.js\
+\
+campaignCtrl.js\
+adminCtrl.js\
+adCtrl.js\
+\
+campaign_query.html\
+\
+\
+<h4>Live report data table goes \{\{report.name\}\}</h4>\
+		<table class="table table-striped table-condensed table-hover">\
+                <thead>\
+                    <tr>\
+                        <th ng-repeat="header in reportdetails.headers">\{\{header\}\}</td>\
+                    </tr>\
+                </thead>\
+                <tbody>\
+                    <tr ng-repeat="value in reportdetails.values">\
+                        <td ng-repeat="data in value">\{\{data\}\}</td>\
+                    </tr>\
+                </tbody>\
+          </table>\
+\
+\
+"headers":["Advertiser Name","Ad Name","Browser", "OS", "Manufacturer", "Carrier", "Device", "Click Count", "Impression Count"],\
+        "values":[["Advertiser1", "testAd ", "safari ", "iOS", "Apple ", "airtel ", "iPhone5 ", "1234","100"],\
+        		  ["Advertiser2", "testAd2 ", "mozilla ", "android", "Samsung ", "vodafone ", "Galaxy4 ", "12345","10"],\
+        		  ["Advertiser3", "testAd3 ", "opera ", "Symbian", "Nokia ", "vodafone ", "N6 ", "145","10"]\
+        		  ]\
+\
+drop down for time levels from report details\
+start and end date\
+\
+\
+getFilters\
+getFilter\
+\
+iOS => (valid browser set) + (valid model set)+ ( valid carrier set)+(device)\
+        each bitmap should have valid (m+n+o) dimension bit map vector\
+browser => (valid browser set) + (valid model set)+ ( valid carrier set)\
+carrier => ( but map vector )\
+manufacturer => ( bit map vector )\
+device=> ( bit map vector )\
+\
+   rowNum, colNum to rowNum+1, colNum-1\
+\
+\pard\pardeftab720
+
+\f2\fs22 \cf0 \cb1 	    \cf9 /*\cf0 \
+\pard\pardeftab720
+\cf9 	    		\ul \ulc9 int\ulnone  rowCnt = copyOfBitMatrix.getRows();\cf0 \
+\pard\pardeftab720
+\cf9 	    \ul int\ulnone  columnCnt = copyOfBitMatrix.getColumns();\cf0 \
+\cf9 		for(\ul int\ulnone  i=0; i<rowCnt;i++)\{\cf0 \
+\cf9 	    	for(\ul int\ulnone  j=0; j<columnCnt;j++)\{\cf0 \
+\cf9 	    		if(copyOfBitMatrix.get(i, j))\{\cf0 \
+\cf9 	    			Object attributeValue = rowNumToValuesLookup.get((i*columnCnt)+j);	    			\cf0 \
+\cf9 	    			String mappedAttribute = getMappedAttributeForRowNum((i*columnCnt)+j);\cf0 \
+\
+\cf9 	    			if(filters.containsKey(mappedAttribute))\{\cf0 \
+\cf9 	    				Collection<Object> collection = filters.get(mappedAttribute);\cf0 \
+\cf9 	    				collection.add(attributeValue);\cf0 \
+\cf9 	    			\}else\{\cf0 \
+\cf9 	    				Collection<Object> collection = new ArrayList<Object>();\cf0 \
+\cf9 	    				collection.add(attributeValue);\cf0 \
+\cf9 	    				filters.put(mappedAttribute, collection);\cf0 \
+\cf9 	    			\}	    			\cf0 \
+\cf9 	    		\}\cf0 \
+\cf9 	    	\}\cf0 \
+\cf9 	    \}\cf0 \
+\cf9 		*/
+\f4\fs26 \cf6 \cb7 \
+  \
+
+\f2\fs22 \cf0 \cb1 server.port=18090\
+memcache.address=\ul localhost\ulnone :11211\
+memcache.ttl=360000
+\f4\fs26 \cf6 \cb7   \
+\
+On the UI we have the following states for the campaign\
+APPROVED, REJECTED, PAUSED, RUNNING, DELETED\
+\
+In the DB we have the following states defined\
+APPROVED, REJECTED, IN_REVIEW, BLOCKED\
+\
+Should i add the above states on the server side?\
+\
+\
+<div class="row">	  \
+  <div class=".col-md-4">\
+    <label for="sdId" class="control-label">Start Date</label>\
+  </div>\
+  <div class=".col-md-8">\
+    <input type="text" \
+		   class="form-control" id="sdId"	\
+		   datepicker-popup="\{\{format\}\}"\
+		   is-open="startOpened" \
+		   max="'2015-06-22'" \
+		   datepicker-options="dateOptions"\
+		   close-text="Close" \
+		   ng-model="selectedCampaign.start" 			   \
+	    	popover="click for calendar" popover-trigger="mouseenter" \
+			popover-animation="true" popover-placement="right"			\
+	 >&nbsp;&nbsp;<i class="icon-calendar"></i>\
+  </div>\
+</div>\
+<div class="row">\
+  <div class=".col-md-6">\
+    <label for="edId" class="control-label">End Date</label>\
+  </div>\
+  <div class=".col-md-6">\
+    <input type="text" \
+		   class="form-control" id="edId"	\
+		   datepicker-popup="\{\{format\}\}"\
+		   is-open="endOpened" \
+		   max="'2015-06-22'" \
+		   datepicker-options="dateOptions"\
+		   close-text="Close" \
+		   ng-model="selectedCampaign.end" \
+    	popover="click for calendar" popover-trigger="mouseenter" \
+		popover-animation="true" popover-placement="right"			   \
+	 >&nbsp;&nbsp;<i class="icon-calendar"></i>\
+   </div>\
+</div>	  	  	  \
+  <div class="form-group">\
+    <label for="nameId" class="control-label">Name</label>\
+    <input type="text" class="form-control" id="nameId" placeholder="Enter name" ng-model="selectedCampaign.name">\
+  </div>	  \
+  <div class="form-group">\
+    <label for="stId" class="control-label">Is Active?</label>\
+    <input type="checkbox" \
+		   class="form-control" id="stId"	\
+		   ng-model="selectedCampaign.state"\
+	       ng-true-value="ACTIVE"\
+	       ng-false-value="IN_ACTIVE"			\
+	 >\
+  </div>  \
+  <div class="form-group">\
+    <label for="aId" class="control-label">Approval Status</label>\
+	<select ng-model="selectedCampaign.approvalState" ng-options="aState for aState in approvalStates"></select>	\
+  </div>	  \
+  <div class="form-group">\
+    <label for="descId" class="control-label">Description</label>\
+    <textarea class="form-control" id="descId" placeholder="Enter Description" ng-model="selectedCampaign.desc"></textarea>\
+  </div>	  	  \
+  <div class="form-group">\
+    <label for="bidTypeId" class="control-label">BidType</label>\
+	<select ng-model="selectedCampaign.bidType" ng-options="bType for bType in bidTypes" class="form-control" id="bidTypeId"></select>\
+  </div>\
+  <div class="form-group">\
+    <label for="oId" class="control-label">Objective</label>\
+    <input type="text" class="form-control" id="oId" placeholder="Enter Objective" ng-model="selectedCampaign.objective">\
+  </div>\
+  <div class="form-group">\
+    <label for="bId" class="control-label">Budget</label>\
+    <input type="text" \
+		   class="form-control" id="bId"	\
+		   ng-model="selectedCampaign.budget"\
+	 ><i>&nbsp;&nbsp;(in USD)</i>\
+  </div>\
+\
+\
+///\
+\
+\
+<form class="form-horizontal" role="form">	  \
+  <div class="form-group">\
+    <label for="sdId" class="col-md-2 control-label">Start Date</label>\
+    <div class="col-md-6">\
+      <input type="text" \
+		   class="col-md-4 form-control" id="sdId"	\
+		   datepicker-popup="\{\{format\}\}"\
+		   is-open="startOpened" \
+		   max="'2015-06-22'" \
+		   datepicker-options="dateOptions"\
+		   close-text="Close" \
+		   ng-model="selectedCampaign.start" 			   \
+	    	popover="click for calendar" popover-trigger="mouseenter" \
+			popover-animation="true" popover-placement="right"			\
+	 >&nbsp;&nbsp;<i class="icon-calendar"></i>\
+   </div>\
+  </div>\
+  <div class="form-group">\
+    <label for="edId" class="col-md-2 control-label">End Date</label>\
+    <div class="col-md-6">\
+      <input type="text" \
+		   class="col-md-4 form-control" id="edId"	\
+		   datepicker-popup="\{\{format\}\}"\
+		   is-open="endOpened" \
+		   max="'2015-06-22'" \
+		   datepicker-options="dateOptions"\
+		   close-text="Close" \
+		   ng-model="selectedCampaign.end" \
+    	popover="click for calendar" popover-trigger="mouseenter" \
+		popover-animation="true" popover-placement="right"			   \
+	 >&nbsp;&nbsp;<i class="icon-calendar"></i>\
+  </div>\
+  </div>	  	  	  \
+  <div class="form-group">\
+    <label for="nameId" class="col-md-2 control-label">Name</label>\
+    <div class="col-md-6">\
+      <input type="text" class="form-control" id="nameId" placeholder="Enter name" ng-model="selectedCampaign.name">\
+    </div>\
+  </div>	  \
+  <div class="form-group">\
+    <label for="stId" class="col-md-2  control-label">Is Active?</label>\
+    <div class="col-md-6">\
+      <input type="checkbox" \
+		   class="form-control" id="stId"	\
+		   ng-model="selectedCampaign.state"\
+	       ng-true-value="ACTIVE"\
+	       ng-false-value="IN_ACTIVE">\
+    </div>\
+  </div>  \
+  <div class="form-group">\
+    <label for="aId" class="col-md-2  control-label">Approval Status</label>\
+	  <div class="col-md-6">\
+      <select ng-model="selectedCampaign.approvalState" ng-options="aState for aState in approvalStates"></select>	\
+    </div>\
+  </div>	  \
+  <div class="form-group">\
+    <label for="descId" class="col-md-2  control-label">Description</label>\
+    <div class="col-md-6">\
+      <textarea class="form-control" id="descId" placeholder="Enter Description" ng-model="selectedCampaign.desc"></textarea>\
+    </div>\
+  </div>	  	  \
+  <div class="form-group">\
+    <label for="bidTypeId" class="col-md-2  control-label">BidType</label>\
+	 <div class="col-md-6">\
+    <select ng-model="selectedCampaign.bidType" ng-options="bType for bType in bidTypes" class="form-control" id="bidTypeId"></select>\
+   </div>\
+  </div>\
+  <div class="form-group">\
+    <label for="oId" class="col-md-2  control-label">Objective</label>\
+    <div class="col-md-6">\
+      <input type="text" class="form-control" id="oId" placeholder="Enter Objective" ng-model="selectedCampaign.objective">\
+      </div>\
+  </div>\
+  <div class="form-group">\
+    <label for="bId" class="col-md-2  control-label">Budget</label>\
+    <div class="col-md-6"> \
+      <input type="text" \
+		   class="form-control" id="bId"	\
+		   ng-model="selectedCampaign.budget"\
+	 ><i>&nbsp;&nbsp;(in USD)</i>\
+   </div>\
+  </div>\
+\
+http://localhost/kap/adm/ad/get/\
+http://localhost/kap/adm/camp/get/byname?name=P\
+http://localhost/kap/adm/camp/get/byname?name=Priy%\
+\
+[\{"advertiserId":1,"start":"Jan 21, 2014 9:45:08 AM","end":"Mar 27, 2015 10:25:29 AM","budget":60000,"actualCost\'94:33000,"bidType":"CPA","state":"ACTIVE","approvalState":"APPROVED","id":2,"name":"Priyanka Chopra","description":"Priyanka Chopra shooting video"\}]\
+[\{"advertiserId":1,"start":"Jan 21, 2014 9:45:08 AM","end":"Mar 27, 2015 10:25:29\
+\
+\
+HCLTech\
+IDFC\
+BANKNIFTY\
+TM\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs22 \cf0 \cb1 \CocoaLigature0 \{"headers" : ["isn","publisherid","timeslot","aggregate","timelevel","hash","click_count","server_impression_sum","server_impression_count","click_sum"],"data" : [[ISN9,\{"name" : "madgic  Publisher","id" : 1\},"April 22, 2014 12:15:00",AGGREGATE_1,FIFTEEN_MINUTES,1019505207,6,0,6,0],[ISN5,\{"name" : "madgic  Publisher","id" : 1\},"April 22, 2014 12:15:00",AGGREGATE_1,FIFTEEN_MINUTES,-515537682,5,0,5,0],[ISN6,\{"name" : "madgic  Publisher","id" : 1\},"April 22, 2014 12:15:00",AGGREGATE_1,FIFTEEN_MINUTES,1544702845,6,0,6,0],[ISN2,\{"name" : "madgic  Publisher","id" : 1\},"April 22, 2014 12:15:00",AGGREGATE_1,FIFTEEN_MINUTES,-79661246,5,0,5,0],[ISN4,\{"name" : "madgic  Publisher","id" : 1\},"April 22, 2014 12:15:00",AGGREGATE_1,FIFTEEN_MINUTES,1410401108,17,0,17,0],[ISN3,\{"name" : "madgic  Publisher","id" : 1\},"April 22, 2014 12:15:00",AGGREGATE_1,FIFTEEN_MINUTES,844185881,7,0,7,0],[ISN0,\{"name" : "madgic  Publisher","id" : 1\},"April 22, 2014 12:15:00",AGGREGATE_1,FIFTEEN_MINUTES,758543764,5,0,5,0],[ISN7,\{"name" : "madgic  Publisher","id" : 1\},"April 22, 2014 12:15:00",AGGREGATE_1,FIFTEEN_MINUTES,-569625264,8,0,8,0],[ISN1,\{"name" : "madgic  Publisher","id" : 1\},"April 22, 2014 12:15:00",AGGREGATE_1,FIFTEEN_MINUTES,108995999,4,0,4,0],[ISN8,\{"name" : "madgic  Publisher","id" : 1\},"April 22, 2014 12:15:00",AGGREGATE_1,FIFTEEN_MINUTES,2037167901,13,0,13,0]]\}\
+\
+\
+    <div class ="row">\
+            <div class="col-md-offset-1 col-md-6" class="btn-group pull-left sites" ng-class='\{siteopen: siteopen\}'>\
+                <text>Site/App Name</text>\
+                <button class="btn dropdown-toggle" data-toggle="dropdown" ng-click='siteopen=!siteopen'><span>\{\{site.name\}\}&nbsp;&nbsp;</span><span class="caret"></span></button>\
+                <ul class="dropdown-menu">\
+                    <li ng-repeat = "site in sites"><a ng-click="handleChooseSite(site)">\{\{site.name\}\}</a>\
+                    </li>\
+                </ul>\
+            </div>\
+    </div>\
+    <div class ="row">\
+      <div class="col-md-offset-1 col-md-2" class="btn-group" ng-class='\{open:open\}'>\
+        <text>Top</text> \
+            <button class="btn dropdown-toggle" data-toggle="dropdown" ng-click='open=!open'><span>\{\{topK\}\}&nbsp;&nbsp;</span><span class="caret"></span></button>\
+             <ul class="dropdown-menu" ng-click='open=!open'>\
+                <li ng-repeat = "topK in topKvalues"><a ng-click="handleChooseTopK(topK)">\{\{topK.name\}\}</a>\
+                </li>\
+            </ul>\
+      </div>  \
+  </div>\
+\
+getAvailablePublisherReports\
+getAvailableAdvertiserReports\
+\
+adTestServices.getActiveSites\
+$adTestServices.getActiveCampaigns\
+\
+query is \{\
+		 *     aggrName  : 'Campaign Performance',\
+		 *     timeLevel : 'string which will help us get the time-level object'\
+		 *     groupBy   : ['site id', 'browser', 'os'],\
+		 *     start     : 'MM-DD-YYYY:HH',\
+		 *     end       : 'MM-DD-YYYY:HH',\
+		 *	   measures  : ['impression_count','click count', 'cpc', eCPC , pub-payout],\
+		 *     orderBy   : \{'colName' : 'desc/asc',...\},\
+		 *	   filters  : \{	columnName : [val1, val2,...],... \}\
+		 *     pageSize  : <number of rows>\
+		 *     pageNum   : <page-number>\
+		 *	   impressionLimit : \
+		 * \}\
+\
+Banner\
+_formatValue()\
+\pard\pardeftab720\sl400
+
+\f1\fs26 \cf15 \CocoaLigature1 return <a href="\{\{item.previewUrl\}\}">\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs22 \cf0 \CocoaLigature0 \
+\{\'93advId\'94:1\}\
+\
+Flume:\
+\pard\pardeftab720
+
+\f1\fs24 \cf0 \CocoaLigature1 bin/flume-ng agent --conf ./conf/ -f conf/flume.conf -Dflume.root.logger=DEBUG,console -n agent1\
+\
+\
+<span ng-class="glyphicon glyphicon-arrow-up"></span>\
+<span class="icon" ng-class='icon-arrow-down':sortDir, 'icon-arrow-up':!sortDir\}"></span>\
+<span class="glyphicon" ng-class="\{'glyphicon-arrow-down\'92:sortDir, 'glyphicon-arrow-up':!sortDir\}"></span>\
+\
+<span class="glyphicon" class="\{'glyphicon-arrow-down\'92:sortDir, 'glyphicon-arrow-up':!sortDir\}"></span>\
+\
+<th ng-click="selectSortHeader($index); sortDir=!sortDir"  ng-repeat="header in reportdetails.headers track by $index">\{\{header.name\}\}<a><span ng-show="isSortableColumn($index)"><span ng-show="!sortDir" class="glyphicon glyphicon-arrow-down"></span><span ng-show="!sortDir" class="glyphicon glyphicon-arrow-up"></span></span></a></th>\
+\
+\
+<span ng-show="isSortableColumn($index)><font color="red">\{\{header.name\}\}</font></span>\
+\
+\
+\
+\pard\pardeftab720\sl680
+
+\f7\fs46 \cf0 app\cf16 .\cf0 config\cf16 ([\cf17 '$httpProvider'\cf16 ,\cf0  
+\b \cf18 function
+\b0 \cf0  \cf16 (\cf0 $httpProvider\cf16 )\cf0  \cf16 \{\cf0 \
+\'a0 \'a0 
+\b \cf18 var
+\b0 \cf0  $http\cf16 ,\cf0 \
+\'a0 \'a0 \'a0 \'a0 interceptor \cf16 =\cf0  \cf16 [\cf17 '$q'\cf16 ,\cf0  \cf17 '$injector'\cf16 ,\cf0  
+\b \cf18 function
+\b0 \cf0  \cf16 (\cf0 $q\cf16 ,\cf0  $injector\cf16 )\cf0  \cf16 \{\cf0 \
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 
+\b \cf18 var
+\b0 \cf0  error\cf16 ;\cf0 \
+\
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 
+\b \cf18 function
+\b0 \cf0  success\cf16 (\cf0 response\cf16 )\cf0  \cf16 \{\cf0 \
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \cf19 // get $http via $injector because of circular dependency problem\cf0 \
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 $http \cf16 =\cf0  $http \cf16 ||\cf0  $injector\cf16 .
+\b \cf18 get
+\b0 \cf16 (\cf17 '$http'\cf16 );\cf0 \
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 
+\b \cf18 if
+\b0 \cf16 (\cf0 $http\cf16 .\cf0 pendingRequests\cf16 .\cf0 length \cf16 <\cf0  \cf20 1\cf16 )\cf0  \cf16 \{\cf0 \
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 $\cf16 (\cf17 '#loadingWidget'\cf16 ).\cf0 hide\cf16 ();\cf0 \
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \cf16 \}\cf0 \
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 
+\b \cf18 return
+\b0 \cf0  response\cf16 ;\cf0 \
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \cf16 \}\cf0 \
+\
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 
+\b \cf18 function
+\b0 \cf0  error\cf16 (\cf0 response\cf16 )\cf0  \cf16 \{\cf0 \
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \cf19 // get $http via $injector because of circular dependency problem\cf0 \
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 $http \cf16 =\cf0  $http \cf16 ||\cf0  $injector\cf16 .
+\b \cf18 get
+\b0 \cf16 (\cf17 '$http'\cf16 );\cf0 \
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 
+\b \cf18 if
+\b0 \cf16 (\cf0 $http\cf16 .\cf0 pendingRequests\cf16 .\cf0 length \cf16 <\cf0  \cf20 1\cf16 )\cf0  \cf16 \{\cf0 \
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 $\cf16 (\cf17 '#loadingWidget'\cf16 ).\cf0 hide\cf16 ();\cf0 \
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \cf16 \}\cf0 \
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 
+\b \cf18 return
+\b0 \cf0  $q\cf16 .\cf0 reject\cf16 (\cf0 response\cf16 );\cf0 \
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \cf16 \}\cf0 \
+\
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 
+\b \cf18 return
+\b0 \cf0  
+\b \cf18 function
+\b0 \cf0  \cf16 (\cf0 promise\cf16 )\cf0  \cf16 \{\cf0 \
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 $\cf16 (\cf17 '#loadingWidget'\cf16 ).\cf0 show\cf16 ();\cf0 \
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 
+\b \cf18 return
+\b0 \cf0  promise\cf16 .\cf0 then\cf16 (\cf0 success\cf16 ,\cf0  error\cf16 );\cf0 \
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \cf16 \}\cf0 \
+\'a0 \'a0 \'a0 \'a0 \cf16 \}];\cf0 \
+\
+\'a0 \'a0 $httpProvider\cf16 .\cf0 responseInterceptors\cf16 .\cf0 push\cf16 (\cf0 interceptor\cf16 );\cf0 \
+\cf16 \}]);\cf0 \
+\pard\pardeftab720\sl680
+
+\f1\fs24 \cf0 \
+	ad : \{\
+		fetch 			: "/adm/ads/getall/$\{cmpId\}",\
+		'get'   		: "/adm/ads/get/$\{adId\}",\
+		upsert			: "/adm/ads/upsert/$\{adId\}",\
+		'delete'        : "/adm/ads/delete/$\{adId\}"		\
+	\},\
+	banner : \{\
+		'get'   		: "/adm/ban/get/$\{banId\}"		\
+	\},\
+	campaigns : \{\
+		fetch   : "/adm/camp/getall/$\{advId\}",\
+		//'get':"/adm/camp/get/byname?name=$\{cmpName\}"\
+		'get'   : "/adm/camp/get/$\{cmpId\}"\
+	\},\
+	publisher : \{\
+		fetch   : "/adm/pub/fetch?name=",\
+		'get'   : "/adm/pub/get/\{pubId\}"\
+		\
+	\},\
+	advertiser : \{\
+		fetch   : "/adm/adv/fetch?name=",\
+		'get'   : "/adm/adv/get/$\{advId\}"\
+		\
+	\},\
+	site : \{\
+		fetch   : "/adm/site/get/active/$\{pubId\}"\
+		\
+	\},\
+	reports : \{\
+		 //'get':"/rtc/fetch",\
+		'get':"../test/data/reportdetails.json",\
+		//fetch:"/adm/pub/fetch?name=Pub"\
+		fetch:"../test/data/reports.json"\
+	\},\
+    /*\
+    $scope.ID_COLUMNS_API=[\
+            \{"name":"ADVERTISERID","displayName":"Advertiser","url":$urlMaker.advertiser.get,"key":"advId"\},\
+            \{"name":"PUBLISHERID","displayName":"Publisher","url":$urlMaker.publisher.get,"key":"pubId"\},\
+            \{"name":"SITEID","displayName":"Site","url":$urlMaker.site.get,"key":"pubId"\},\
+            \{"name":"CAMPAIGNID","displayName":"Campaign","url":$urlMaker.campaigns.get,"key":"cmpId"\},\
+            \{"name":"ADID","displayName":"Ad","url":$urlMaker.ad.get,"key":"adId"\},\
+            \{"name":"BANNERID","displayName":"Banner","url":$urlMaker.banner.get,"key":"banId"\}\
+    ];\
+   */\
+\
+\
+To Enable authentication using mod_auth_form in apache2.4\
+Step 1: Enable the following in httpd.conf\
+\pard\pardeftab720\sl280
+
+\f6\fs26 \cf0 LoadModule auth_form_module modules/mod_authn_core.so\cf13 \
+\cf0 LoadModule auth_form_module modules/mod_auth_form.so\cf13 \
+\cf0 LoadModule session_module modules/mod_session.so\cf13 \
+\cf0 LoadModule request_module modules/mod_request.so\
+\
+Step 2: Add the user:\
+\pard\pardeftab720\sl340
+
+\f2\fs24 \cf6 \cb21 htpasswd -c /usr/local/apache/auth/.htpasswd venki\
+
+\f6\fs26 \cf0 \cb1 \
+Step 3:Create htdocs/login.html\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs22 \cf0 \CocoaLigature0 <html>\
+<head>\
+        <title>Login page</title>\
+    </head>\
+    <body>\
+        <form method="POST" action="">\
+            User: <input type="text" name="httpd_username" value="" />\
+            Pass: <input type="password" name="httpd_password" value="" />\
+            <input type="submit" name="login" value="Login" />\
+        </form>\
+    </body>\
+</html>
+\f6\fs26 \CocoaLigature1 \
+\pard\pardeftab720\sl340
+\cf0 \
+\pard\pardeftab720\sl280
+\cf0 Step 4: Add locations to be protected:\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs22 \cf0 \CocoaLigature0 <Location "/app/pages/index.html#/admin/advertiser_reports">\
+   AuthFormProvider file\
+   AuthType form\
+   AuthName "Reserved Area"\
+    Session On\
+    SessionCookieName session path=/\
+    require valid-user\
+\
+    # This is the login page\
+    ErrorDocument 401 /login.html\
+\
+    # This is the file containing users login data\
+    AuthUserFile /usr/local/apache/auth/.htpasswd\
+\
+</Location>\
+<Location "/app/pages/index.html">\
+   AuthFormProvider file\
+   AuthType form\
+   AuthName "Reserved Area"\
+    Session On\
+    SessionCookieName session path=/\
+    require valid-user\
+\
+    # This is the login page\
+    ErrorDocument 401 /login.html\
+\
+    # This is the file containing users login data\
+    AuthUserFile /usr/local/apache/auth/.htpasswd\
+\
+</Location>\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f6\fs26 \cf0 \CocoaLigature1 \
+Step 5: Restart server:\
+\pard\pardeftab720\sl340
+
+\f2\fs24 \cf6 \cb21 sudo apachectl restart \
+\pard\pardeftab720\sl280
+
+\f6\fs26 \cf0 \cb1 \
+Step 6: Go to http://localhost/app/pages/index.html#/admin/advertiser_reports where the user is prompted for the password\
+\
+\cf13 \
+\pard\pardeftab720
+
+\f1\fs32 \cf0 \cb22 <Directory "/var/www/html/protected">\
+  AuthType Basic\
+  AuthName "Authentication Required"\
+  AuthUserFile "/etc/htpasswd/.htpasswd"\
+  Require valid-user\
+\
+  Order allow,deny\
+  Allow from all\
+</Directory>\
+\pard\pardeftab720\sl280
+
+\f6\fs26 \cf13 \cb1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs22 \cf1 \cb14 \CocoaLigature0 <LocationMatch ^/app>\
+\pard\pardeftab720
+
+\f1\fs32 \cf0 \cb22 \CocoaLigature1   AuthType Basic\
+  AuthName "Authentication Required"\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs22 \cf1 \cb14 \CocoaLigature0    AuthUserFile /usr/local/apache/auth/.htpasswd
+\f1\fs32 \cf0 \cb22 \CocoaLigature1 \
+\pard\pardeftab720
+\cf0   Require valid-user\
+  Order allow,deny\
+  Allow from all
+\f0\fs22 \cf1 \cb14 \CocoaLigature0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf1 \
+</LocationMatch>\
+\
+\
+\
+<LocationMatch ^/app>\
+   AuthFormProvider file\
+   AuthType form\
+   AuthName realm\
+    Session On\
+    SessionCookieName session path=/\
+    require valid-user\
+\
+    # This is the login page\
+    ErrorDocument 401 /login.html\
+\
+    # This is the file containing users login data\
+    AuthUserFile /usr/local/apache/auth/.htpasswd\
+\
+</LocationMatch>
+\f6\fs26 \cf13 \cb1 \CocoaLigature1 \
+\
+remove nggrid and put ngtable in ads page\
+add column to show banners\
+upload banner in new popup\
+\
+Please clarify on the following from a UI perspective:\
+\
+1. Add new Advertiser ( api upsert need id parameter)\
+2. Add new Publisher ( api upset needs id parameter)\
+3. On campaigns page, addend a new campaign will need an advertiser to be selected. How dow we do this in the UI ?\
+4. On the ads page same issue , needs a campaign, advertiser to be preselected. How do we do this in the UI?\
+5. On the Sites page, needs a publisher to be preselected. How do we do this in the UI?\
+6. Fetch campaigns returns approved campaigns only. If in any other approval state , it cannot be modified.\
+\
+\
+}
